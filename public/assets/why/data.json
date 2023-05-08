@@ -1,0 +1,26 @@
+[
+ {
+  "title": "Ledge Forge Assets",
+  "desc": "Atus Assets, or ATU, assets are community-voted assets that exist and can be in the form of fiat currencies, cryptocurrencies, stocks, commodities, and anything else that has a price.",
+  "image": "/assets/why/image.png",
+  "link": "https://docs.atus.network/atus-protocol/atus-assets"
+ },
+ {
+  "title": "Stake & Earn",
+  "desc": "Bonuses or interest payments may vary depending on factors such as staking length, cryptocurrency, and platform policies. However, Atus offers a Stake index that is superior to what other platforms offer.",
+  "image": "/assets/why/earn.png",
+  "link": "https://docs.atus.network/staking"
+ },
+ {
+  "title": "Build",
+  "desc": "These dApps and smart contracts are built using programming languages like Solidity and can provide a wide range of functionality such as decentralized finance (DeFi), non-fungible tokens (NFTs) and decentralized exchanges (DEXs).",
+  "image": "/assets/why/build.png",
+  "link": "https://docs.atus.network/build"
+ },
+ {
+  "title": "Safe and Secure",
+  "desc": "Atus combines decentralized authentication and authorization mechanisms, which can provide a more secure and private way of authenticating users than traditional centralized systems.",
+  "image": "/assets/why/secure.png",
+  "link": "https://docs.atus.network/apparatus/security"
+ }
+]

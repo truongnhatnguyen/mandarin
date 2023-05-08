@@ -1,0 +1,17 @@
+[
+ {
+  "icon": "/assets/yourtrusted/secure.png",
+  "title": "Secure Asset Fund for Users",
+  "desc": "Hyenaswap stores 10% of all trading fees in a secure asset fund to protect a share of user funds."
+ },
+ {
+  "icon": "/assets/yourtrusted/personalised.png",
+  "title": "Personalised Access Control",
+  "desc": "Personalized access control allows you to restrict devices and addresses that can access your account, for greater ease of mind."
+ },
+ {
+  "icon": "/assets/yourtrusted/advanced.png",
+  "title": "Advanced Data Encryption",
+  "desc": "Your transaction data is secured via end-to-end encryption, ensuring that only you have access to your personal information."
+ }
+]

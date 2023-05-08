@@ -1,0 +1,32 @@
+[
+ {
+  "image": "/assets/function/comprehensive.png",
+  "title": "Comprehensive interoperability",
+  "desc": "Atus provides the ability to connect and communicate with different blockchain networks, regardless of their underlying technology or protocol. We also allow the connection and transfer of all types of content on the Web3."
+ },
+ {
+  "image": "/assets/function/seamless.png",
+  "title": "Seamless Integration",
+  "desc": "We offer a user-friendly interface that makes it easy for individuals and organizations to connect their existing blockchain networks with minimal effort."
+ },
+ {
+  "image": "/assets/function/enhanced.png",
+  "title": "Enhanced Security",
+  "desc": "The security features built into Atus ensure safe and secure transfers of data and other assets between different blockchain networks. Assets when stored at Atus will also be guaranteed safety and transparency."
+ },
+ {
+  "image": "/assets/function/unlimited.png",
+  "title": "Unlimited Scalability",
+  "desc": "We promote the ability to support more and more connected blockchain networks and increase processing speed amid increasing transaction volumes."
+ },
+ {
+  "image": "/assets/function/easyblockchain.png",
+  "title": "Easy Blockchain Innovation",
+  "desc": "Create a custom blockchain in minutes using the Ledger framework. Connect your chain to Atus and get interoperability and security right from the start. This ease and flexibility is the premise for the Atus ecosystem to grow."
+ },
+ {
+  "image": "/assets/function/community.png",
+  "title": "Community Governance",
+  "desc": "Atus's decentralized governance model allows the community to manage and make decisions around the development and direction of the project. Some very important votes will be decided by voting from the community."
+ }
+]

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+ .container-auto {
+  @apply container px-4 mx-auto max-w-[1024px];
+ }
+ html {
+  @apply text-[14px] md:text-[16px];
+ }
+ #root {
+  @apply overflow-x-hidden md:overflow-x-visible;
+ }
+}
