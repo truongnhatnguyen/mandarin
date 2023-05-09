@@ -9,10 +9,10 @@ export function Menu() {
           <div className="cs-nav">
             <ul className="cs-nav_list">
               <li className="menu-item-has-children">
-                <NavLink to="index.html">Home</NavLink>
+                <NavLink to="/">Home</NavLink>
                 <ul>
                   <li>
-                    <NavLink to="index.html">Home Default</NavLink>
+                    <NavLink to="/">Home Default</NavLink>
                   </li>
                   <li>
                     <NavLink to="index_2.html">Home Style 2</NavLink>
@@ -159,7 +159,7 @@ export function Menu() {
                 </ul>
               </li>
               <li>
-                <NavLink to="contact.html">Contact</NavLink>
+                <NavLink to="contact">Contact</NavLink>
               </li>
             </ul>
           </div>

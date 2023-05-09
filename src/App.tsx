@@ -13,6 +13,7 @@ import { PrivacyPage } from "./pages/Privacy";
 import { TermPage } from "./pages/Term";
 
 import "./sass/style.scss";
+import { Contact } from "./pages/Contact";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           }
         >
           <Route index element={<HomePage />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="presale" element={<BuyPresalePage />} />
           <Route path="term" element={<TermPage />} />
           <Route path="privacy" element={<PrivacyPage />} />
