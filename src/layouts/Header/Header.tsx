@@ -47,7 +47,6 @@ export const Header = () => {
                 </form>
               </div>
               <Menu />
-              {/* menu */}
               <div className="cs-header_btns_wrap">
                 <div className="cs-header_btns">
                   <div className="cs-header_icon_btn cs-center cs-mobile_search_toggle">

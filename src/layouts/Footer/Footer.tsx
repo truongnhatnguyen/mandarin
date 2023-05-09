@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="cs-footer cs-style1">
       <div className="cs-footer_bg" />
       <div className="cs-height_100 cs-height_lg_60" />
-      <div className="container mx-auto">
+      <div className="sm:container sm:mx-auto mx-5">
         <div className="flex flex-row flex-wrap">
           <div className="basis-8/12">
             <div className="flex flex-row flex-wrap">
