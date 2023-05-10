@@ -14,42 +14,16 @@ export function Menu() {
                   <li>
                     <NavLink to="/">Home Default</NavLink>
                   </li>
-                  <li>
-                    <NavLink to="index_2.html">Home Style 2</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="index_3.html">Home Style 3</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="index_4.html">Home Style 4</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="index_5.html">Home Style 5</NavLink>
-                  </li>
                 </ul>
               </li>
               <li className="menu-item-has-children">
-                <NavLink to="explore-details">Explore</NavLink>
+                <NavLink to="explore">Explore</NavLink>
                 <ul>
                   <li>
-                    <NavLink to="explore-1.html">Explore Style 1</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="explore-2.html">Explore Style 2</NavLink>
+                    <NavLink to="explore">Explore</NavLink>
                   </li>
                   <li>
                     <NavLink to="explore-details">Explore Details</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="live-action.html">Live Auction</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="collection.html">Collection</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="collection-details.html">
-                      Collection Details
-                    </NavLink>
                   </li>
                 </ul>
               </li>

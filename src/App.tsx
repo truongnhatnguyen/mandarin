@@ -18,6 +18,7 @@ import { HowItWorks } from "./pages/HowItWorks";
 import { ConnectWallet } from "./pages/ConnectWallet";
 import { Page404 } from "./pages/404Page";
 import { ExploreDetails } from "./pages/ExploreDetails";
+import { Explore } from "./pages/Explore";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="connect-wallet" element={<ConnectWallet />} />
           <Route path="explore-details" element={<ExploreDetails />} />
+          <Route path="explore" element={<Explore />} />
           <Route path="privacy" element={<PrivacyPage />} />
           <Route path="presale" element={<BuyPresalePage />} />
           <Route path="term" element={<TermPage />} />
