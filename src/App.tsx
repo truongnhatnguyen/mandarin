@@ -34,9 +34,9 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="how-it-works" element={<HowItWorks />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy" element={<PrivacyPage />} />
           <Route path="presale" element={<BuyPresalePage />} />
           <Route path="term" element={<TermPage />} />
-          <Route path="privacy" element={<PrivacyPage />} />
         </Route>
       </Routes>
       <ToastContainer />

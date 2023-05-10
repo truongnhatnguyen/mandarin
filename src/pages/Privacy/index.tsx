@@ -1,114 +1,159 @@
 import { L, P, T } from "../../shared/components/Docs";
 
 export function PrivacyPage() {
- return (
-  <div className="container-auto py-12">
-   <T>Privacy Policy for Atus</T>
-   <P>
-    At Atus, accessible from www.atus.network, one of our main priorities is
-    visitor privacy. This Privacy Policy document contains the types of
-    information collected and recorded by Atus and how we use it.
-   </P>
-   <P>
-    If you have further questions or require more information about our Privacy
-    Policy, please contact us.
-   </P>
-   <P>
-    This Privacy Policy applies only to our online activities and is valid for
-    our website visitors in relation to the information they have shared and/or
-    collected in the community. This policy does not apply to any information
-    collected offline or through channels other than this website.
-   </P>
-   <T>Consent</T>
-   <P>
-    By using our website, you agree to our Privacy Policy and agree to its
-    terms.
-   </P>
-   <T>What information do we collect</T>
-   <P>
-    The personal information you are asked to provide and the reasons why you
-    are asked to provide it will be made clear to you at the time we ask you to
-    provide your personal information.
-   </P>
-   <P>
-    If you contact us directly, we may receive additional information about you
-    such as your name, email address, phone number, message body and/or
-    attachments that you may send to us and any other information you may choose
-    to provide.
-   </P>
-   <T>How we use the information we collect</T>
-   <P>
-    Our primary purpose for collecting information is to help us operate,
-    provide, improve, customize, support, and market our Services.
-   </P>
-   <P>We may use your information to:</P>
-   <L>
-    <li> Provide the Services you have requested;</li>
-    <li> Improve our product and user experience;</li>
-    <li> Verify ownership of your Global Backup;</li>
-    <li> Verify ownership of your account;</li>
-    <li> Provision, operation and maintenance of our website;</li>
-    <li> Improve, personalize and expand our website;</li>
-    <li> Understand and analyze how you use our website;</li>
-    <li> Develop new products, services, features and functions;</li>
-    <li> Email you;</li>
-    <li> Find and prevent fraud;</li>
-    <li> Log file.</li>
-   </L>
-   <P>
-    Atus follows the standard procedure of using log files. These files record
-    visitors when they visit the website. All hosting companies do this and are
-    part of the hosting analysis. The information collected by the log file
-    includes internet protocol (IP) addresses, Internet Service Providers (ISP),
-    date and time stamps, referring/exit pages, and possibly clicks. They are
-    not linked to any personally identifiable information. The purpose of the
-    information is to analyze trends, administer the website, track user
-    movements on the site, and collect demographic information.
-   </P>
-   <T>Data that we collect when you use our services</T>
-   <L>
-    <li>The IP address used to connect your computer to the internet;</li>
-    <li>
-     Data about your location, device type and model, operating system and
-     version and platform, and any applications you are using in connection with
-     our services;
-    </li>
-    <li>Data relating to your use of our Services;</li>
-    <li>
-     And the number of times you access or use any of our Services and the
-     amount of time you use the Services.
-    </li>
-   </L>
-   <T>Third Party Privacy Policies</T>
-   <P>
-    Atus's Privacy Policy does not apply to other advertisers or websites. We
-    therefore recommend that you refer to the respective Privacy Policy of these
-    third-party ad servers for more detailed information. It may include their
-    practices and instructions on how to opt out of certain options.
-   </P>
-   <P>
-    You can choose to disable cookies through your personal browser preferences.
-    For more detailed information on cookie management with specific web
-    browsers, you can find this information at your browser's respective web
-    pages.
-   </P>
-   <T>How we update our Policy</T>
-   <P>
-    We reserve the right to update this Policy online from time to time, and the
-    new policy will immediately replace the old one once posted. We will notify
-    you of material changes to this policy by updating the last updated date at
-    the top of this page.
-   </P>
-   <P>
-    In particular, if you do not accept the revised policies, please stop using
-    the Service immediately
-   </P>
-   <P>
-    Your continued use of our Services confirms your acceptance of our Privacy
-    Policy, as amended. If you do not agree with our Privacy Policy, as amended,
-    you must stop using our Services. We recommend that you visit this page
-    regularly to check for changes.
-   </P>
-  </div>
- );
+  return (
+    <>
+      <div>
+        <div className="cs-height_100 cs-height_lg_70" />
+        <div className="container-auto py-12">
+          <T>Privacy Policy for Atus</T>{" "}
+          <P>
+            At Atus, accessible from www.atus.network, one of our main
+            priorities is visitor privacy. This Privacy Policy document contains
+            the types of information collected and recorded by Atus and how we
+            use it.{" "}
+          </P>{" "}
+          <P>
+            If you have further questions or require more information about our
+            Privacy Policy, please contact us.{" "}
+          </P>{" "}
+          <P>
+            This Privacy Policy applies only to our online activities and is
+            valid for our website visitors in relation to the information they
+            have shared and/or collected in the community. This policy does not
+            apply to any information collected offline or through channels other
+            than this website.{" "}
+          </P>
+          <T>Consent</T>{" "}
+          <P>
+            By using our website, you agree to our Privacy Policy and agree to
+            its terms.{" "}
+          </P>
+          <T>What information do we collect</T>{" "}
+          <P>
+            The personal information you are asked to provide and the reasons
+            why you are asked to provide it will be made clear to you at the
+            time we ask you to provide your personal information.{" "}
+          </P>{" "}
+          <P>
+            If you contact us directly, we may receive additional information
+            about you such as your name, email address, phone number, message
+            body and/or attachments that you may send to us and any other
+            information you may choose to provide.{" "}
+          </P>
+          <T>How we use the information we collect</T>{" "}
+          <P>
+            Our primary purpose for collecting information is to help us
+            operate, provide, improve, customize, support, and market our
+            Services.{" "}
+          </P>
+          <P>We may use your information to:</P>{" "}
+          <P>
+            Atus follows the standard procedure of using log files. These files
+            record visitors when they visit the website. All hosting companies
+            do this and are part of the hosting analysis. The information
+            collected by the log file includes internet protocol (IP) addresses,
+            Internet Service Providers (ISP), date and time stamps,
+            referring/exit pages, and possibly clicks. They are not linked to
+            any personally identifiable information. The purpose of the
+            information is to analyze trends, administer the website, track user
+            movements on the site, and collect demographic information.{" "}
+          </P>
+          <T>Data that we collect when you use our services</T>{" "}
+          <T>Third Party Privacy Policies</T>{" "}
+          <P>
+            Atus's Privacy Policy does not apply to other advertisers or
+            websites. We therefore recommend that you refer to the respective
+            Privacy Policy of these third-party ad servers for more detailed
+            information. It may include their practices and instructions on how
+            to opt out of certain options.{" "}
+          </P>{" "}
+          <P>
+            You can choose to disable cookies through your personal browser
+            preferences. For more detailed information on cookie management with
+            specific web browsers, you can find this information at your
+            browser's respective web pages.{" "}
+          </P>
+          <T>How we update our Policy</T>{" "}
+          <P>
+            We reserve the right to update this Policy online from time to time,
+            and the new policy will immediately replace the old one once posted.
+            We will notify you of material changes to this policy by updating
+            the last updated date at the top of this page.{" "}
+          </P>{" "}
+          <P>
+            In particular, if you do not accept the revised policies, please
+            stop using the Service immediately{" "}
+          </P>{" "}
+          <P>
+            Your continued use of our Services confirms your acceptance of our
+            Privacy Policy, as amended. If you do not agree with our Privacy
+            Policy, as amended, you must stop using our Services. We recommend
+            that you visit this page regularly to check for changes.{" "}
+          </P>
+        </div>
+        {/* <div className="container mx-auto">
+          <div className="row">
+            <div className="col-lg-8 offset-lg-2">
+              <div className="cs-single_post">
+                <h3>Privacy Policy</h3>
+                <p>
+                  It is a long established fact that a reader will be distrac by
+                  the readable content of a page when looking at its layout. The
+                  point of using Lorem Ipm i has a more-ornormal distribution of
+                  letters,as opposed It is a long established fact that a reader
+                  will be distrac by the readable content of a page when looking
+                  at itslayout. The point of using Lorem Ipm i has a NFTs <br />
+                  <br /> Crypto is a long established fact that a reader will be
+                  distrac by the readable content of a page when looking at its
+                  layout. The point of using Lorem Ipm i has a more-ornormal
+                  distribution of letters,as opposed It is a long established
+                  fact that a reader will be distrac by the readable content of
+                  a page when looking at itslayout. The point of using Lorem Ipm
+                  i has a NFTs
+                </p>
+                <h3>How do we use this information?</h3>
+                <p>
+                  NFTS Music is a long established fact that a reader will be
+                  distrac by the readable content of a page when looking at its
+                  layout. The point of using Lorem Ipm i has a more-ornormal
+                  distribution of letters,as opposed It is a long established
+                  fact that a reader will be distrac by the readable content of
+                  a page when looking at itslayout. The point of using Lorem Ipm
+                  i has a NFTs
+                </p>
+                <ul>
+                  <li>How to make and sell an NFT.</li>
+                  <li>Buy some cryptocurrency to fund your wallet.</li>
+                  <li>Add some cryptocurrency to your wallet.</li>
+                  <li>Upload the file you want to turn into an NFT.</li>
+                  <li>Set up an auction for your NFT</li>
+                </ul>
+                <h3>Third-party applications, websites and services</h3>
+                <p>
+                  NFTs a long established fact that a reader will be distrac by
+                  the readable content of a page when looking at its layout. The
+                  point of using Lorem Ipm i has a.
+                </p>
+                <h3>Data Access and Control</h3>
+                <p>
+                  You can view, access, edit, or delete your Personal Data for
+                  certain aspects of the Service via your Settings page. You may
+                  also have certain additional rights.
+                </p>
+                <ul>
+                  <li>
+                    It is a long established fact that a reader will be
+                    distracted by the readable
+                  </li>
+                  <li>ontent of a page when looking at its layout</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> */}
+        <div className="cs-height_60 cs-height_lg_30" />
+      </div>
+    </>
+  );
 }
