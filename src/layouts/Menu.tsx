@@ -54,7 +54,7 @@ export function Menu() {
                 </ul>
               </li>
               <li>
-                <NavLink to="how-it-works.html">How It Works</NavLink>
+                <NavLink to="how-it-works">How It Works</NavLink>
               </li>
               <li className="menu-item-has-children">
                 <NavLink to="blog.html">Community</NavLink>
