@@ -29,7 +29,7 @@ export function Menu() {
                 </ul>
               </li>
               <li className="menu-item-has-children">
-                <NavLink to="explore-1.html">Explore</NavLink>
+                <NavLink to="explore-details">Explore</NavLink>
                 <ul>
                   <li>
                     <NavLink to="explore-1.html">Explore Style 1</NavLink>
@@ -38,7 +38,7 @@ export function Menu() {
                     <NavLink to="explore-2.html">Explore Style 2</NavLink>
                   </li>
                   <li>
-                    <NavLink to="explore-details.html">Explore Details</NavLink>
+                    <NavLink to="explore-details">Explore Details</NavLink>
                   </li>
                   <li>
                     <NavLink to="live-action.html">Live Auction</NavLink>

@@ -10,7 +10,7 @@ export function Contact() {
         className="cs-page_head cs-bg"
         data-src="assets/img/page_head_bg.svg"
       >
-        <div className="container mx-auto">
+        <div className="container-auto">
           <div className="text-center">
             <h1 className="cs-page_title">Contact</h1>
             <ol className="breadcrumb">
@@ -24,13 +24,13 @@ export function Contact() {
       </section>
       {/* End Page Head */}
       <div className="cs-height_100 cs-height_lg_70" />
-      <div className="sm:container sm:mx-auto mx-4">
+      <div className="container-auto">
         <div className="flex flex-row">
           <div className="lg:col-span-8 mx-auto">
             <div className="cs-contact_card_wrap">
               <div className="cs-contact_card">
-                <div className="cs-contact_info text-center">
-                  <div className="cs-contact_icon">
+                <div className="cs-contact_info text-center ">
+                  <div className="cs-contact_icon ">
                     <svg
                       width={39}
                       height={39}
