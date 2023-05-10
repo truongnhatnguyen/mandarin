@@ -16,6 +16,7 @@ import "./sass/style.scss";
 import { Contact } from "./pages/Contact";
 import { HowItWorks } from "./pages/HowItWorks";
 import { ConnectWallet } from "./pages/ConnectWallet";
+import { Page404 } from "./pages/404Page";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="privacy" element={<PrivacyPage />} />
           <Route path="presale" element={<BuyPresalePage />} />
           <Route path="term" element={<TermPage />} />
+          <Route path="404" element={<Page404 />} />
         </Route>
       </Routes>
       <ToastContainer />
