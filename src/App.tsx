@@ -15,6 +15,7 @@ import { TermPage } from "./pages/Term";
 import "./sass/style.scss";
 import { Contact } from "./pages/Contact";
 import { HowItWorks } from "./pages/HowItWorks";
+import { ConnectWallet } from "./pages/ConnectWallet";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="how-it-works" element={<HowItWorks />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="connect-wallet" element={<ConnectWallet />} />
           <Route path="privacy" element={<PrivacyPage />} />
           <Route path="presale" element={<BuyPresalePage />} />
           <Route path="term" element={<TermPage />} />
