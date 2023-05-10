@@ -61,7 +61,7 @@ export function Menu() {
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to="about.html">About Us</NavLink>
+                        <NavLink to="about">About Us</NavLink>
                       </li>
                       <li>
                         <NavLink to="help-center.html">Help Center</NavLink>

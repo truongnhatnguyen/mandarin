@@ -19,6 +19,7 @@ import { ConnectWallet } from "./pages/ConnectWallet";
 import { Page404 } from "./pages/404Page";
 import { ExploreDetails } from "./pages/ExploreDetails";
 import { Explore } from "./pages/Explore";
+import { About } from "./pages/About";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="how-it-works" element={<HowItWorks />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
           <Route path="connect-wallet" element={<ConnectWallet />} />
           <Route path="explore-details" element={<ExploreDetails />} />
           <Route path="explore" element={<Explore />} />
