@@ -2,6 +2,50 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Head } from "src/components/Head";
 import { CustomSwiper } from "./CustomSwiper";
+import { Card } from "src/components/Card";
+
+const dataCards = [
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar4.png",
+    avatarInfo: "assets/exploredetails/avatar-similar3.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar3.png",
+    avatarInfo: "assets/exploredetails/avatar-similar2.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar2.png",
+    avatarInfo: "assets/exploredetails/avatar-similar1.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar1.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+  },
+];
 
 export function ExploreDetails() {
   return (
@@ -117,19 +161,10 @@ export function ExploreDetails() {
                   <div className="cs-white_bg cs-box_shadow cs-general_box_5">
                     <div className="cs-social_widget justify-content-center">
                       <NavLink to="#">
-                        <i className="fab fa-facebook-f" />
-                      </NavLink>
-                      <NavLink to="#">
                         <i className="fab fa-twitter" />
                       </NavLink>
                       <NavLink to="#">
-                        <i className="fab fa-linkedin-in" />
-                      </NavLink>
-                      <NavLink to="#">
-                        <i className="fab fa-instagram" />
-                      </NavLink>
-                      <NavLink to="#">
-                        <i className="fab fa-youtube" />
+                        <i className="fab fa-telegram" />
                       </NavLink>
                     </div>
                   </div>
@@ -149,7 +184,7 @@ export function ExploreDetails() {
                 <div className="">
                   <NavLink
                     to="#"
-                    className="cs-btn cs-style1 cs-btn_lg w-full text-center"
+                    className="cs-btn cs-style1 cs-btn_lg w-full text-center bg-white"
                   >
                     <span>Place Bid</span>
                   </NavLink>
@@ -163,197 +198,17 @@ export function ExploreDetails() {
           <h2 className="cs-section_heading cs-style1">Similar Items</h2>
           <div className="cs-height_45 cs-height_lg_45" />
           <div className="cs-grid_5 cs-gap_30">
-            <div className="cs-card cs-style4 cs-box_shadow cs-white_bg">
-              <span className="cs-card_like cs-primary_color">
-                <i className="fas fa-heart fa-fw" />
-                2.1K
-              </span>
-              <NavLink to="#" className="cs-card_thumb cs-zoom_effect">
-                <img
-                  src="assets/exploredetails/similar.png"
-                  alt=""
-                  className="cs-zoom_item"
-                />
-              </NavLink>
-              <div className="cs-card_info">
-                <NavLink to="#" className="cs-avatar cs-white_bg">
-                  <img
-                    src="assets/exploredetails/avatar-similar.png"
-                    alt="Avatar"
-                  />
-                  <span>Johny E.</span>
-                </NavLink>
-                <h3 className="cs-card_title">
-                  <NavLink to="#">Art work #2134</NavLink>
-                </h3>
-                <div className="cs-card_price">
-                  Current Bid: <b className="cs-primary_color">0.29 ETH 7/21</b>
-                </div>
-                <hr />
-                <div className="cs-card_footer">
-                  <span className="cs-card_btn_1" data-modal="#history_1">
-                    <i className="fas fa-redo fa-fw" />
-                    View History
-                  </span>
-                  <span className="cs-card_btn_2" data-modal="#bid_1">
-                    <span>Place Bid</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="cs-card cs-style4 cs-box_shadow cs-white_bg">
-              <span className="cs-card_like cs-primary_color">
-                <i className="fas fa-heart fa-fw" />
-                3.3K
-              </span>
-              <NavLink to="#" className="cs-card_thumb cs-zoom_effect">
-                <img
-                  src="assets/exploredetails/similar1.png"
-                  alt=""
-                  className="cs-zoom_item"
-                />
-              </NavLink>
-              <div className="cs-card_info">
-                <NavLink to="#" className="cs-avatar cs-white_bg">
-                  <img
-                    src="assets/exploredetails/avatar-similar.png"
-                    alt="Avatar"
-                  />
-                  <span>debit alex</span>
-                </NavLink>
-                <h3 className="cs-card_title">
-                  <NavLink to="#">Cool octopus traveling</NavLink>
-                </h3>
-                <div className="cs-card_price">
-                  Current Bid: <b className="cs-primary_color">0.24 ETH 4/17</b>
-                </div>
-                <hr />
-                <div className="cs-card_footer">
-                  <span className="cs-card_btn_1" data-modal="#history_1">
-                    <i className="fas fa-redo fa-fw" />
-                    View History
-                  </span>
-                  <span className="cs-card_btn_2" data-modal="#bid_1">
-                    <span>Place Bid</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="cs-card cs-style4 cs-box_shadow cs-white_bg">
-              <span className="cs-card_like cs-primary_color">
-                <i className="fas fa-heart fa-fw" />
-                3.1K
-              </span>
-              <NavLink to="#" className="cs-card_thumb cs-zoom_effect">
-                <img
-                  src="assets/exploredetails/similar2.png"
-                  alt=""
-                  className="cs-zoom_item"
-                />
-              </NavLink>
-              <div className="cs-card_info">
-                <NavLink to="#" className="cs-avatar cs-white_bg">
-                  <img
-                    src="assets/exploredetails/avatar-similar1.png"
-                    alt="Avatar"
-                  />
-                  <span>robert Alex</span>
-                </NavLink>
-                <h3 className="cs-card_title">
-                  <NavLink to="#">Octopus eating icecrem</NavLink>
-                </h3>
-                <div className="cs-card_price">
-                  Current Bid: <b className="cs-primary_color">0.09 ETH 1/9</b>
-                </div>
-                <hr />
-                <div className="cs-card_footer">
-                  <span className="cs-card_btn_1" data-modal="#history_1">
-                    <i className="fas fa-redo fa-fw" />
-                    View History
-                  </span>
-                  <span className="cs-card_btn_2" data-modal="#bid_1">
-                    <span>Place Bid</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="cs-card cs-style4 cs-box_shadow cs-white_bg">
-              <span className="cs-card_like cs-primary_color">
-                <i className="fas fa-heart fa-fw" />
-                2.1K
-              </span>
-              <NavLink to="#" className="cs-card_thumb cs-zoom_effect">
-                <img
-                  src="assets/exploredetails/similar3.png"
-                  alt=""
-                  className="cs-zoom_item"
-                />
-              </NavLink>
-              <div className="cs-card_info">
-                <NavLink to="#" className="cs-avatar cs-white_bg">
-                  <img
-                    src="assets/exploredetails/avatar-similar2.png"
-                    alt="Avatar"
-                  />
-                  <span>johny e.</span>
-                </NavLink>
-                <h3 className="cs-card_title">
-                  <NavLink to="#">Panda with fish</NavLink>
-                </h3>
-                <div className="cs-card_price">
-                  Current Bid: <b className="cs-primary_color">0.19 ETH 5/11</b>
-                </div>
-                <hr />
-                <div className="cs-card_footer">
-                  <span className="cs-card_btn_1" data-modal="#history_1">
-                    <i className="fas fa-redo fa-fw" />
-                    View History
-                  </span>
-                  <span className="cs-card_btn_2" data-modal="#bid_1">
-                    <span>Place Bid</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="cs-card cs-style4 cs-box_shadow cs-white_bg">
-              <span className="cs-card_like cs-primary_color">
-                <i className="fas fa-heart fa-fw" />
-                1.2K
-              </span>
-              <NavLink to="#" className="cs-card_thumb cs-zoom_effect">
-                <img
-                  src="assets/exploredetails/similar4.png"
-                  alt=""
-                  className="cs-zoom_item"
-                />
-              </NavLink>
-              <div className="cs-card_info">
-                <NavLink to="#" className="cs-avatar cs-white_bg">
-                  <img
-                    src="assets/exploredetails/avatar-similar3.png"
-                    alt="Avatar"
-                  />
-                  <span>austin R.</span>
-                </NavLink>
-                <h3 className="cs-card_title">
-                  <NavLink to="#">Kawaii-bubble-tea</NavLink>
-                </h3>
-                <div className="cs-card_price">
-                  Current Bid:{" "}
-                  <b className="cs-primary_color">0.29 ETH 11/19</b>
-                </div>
-                <hr />
-                <div className="cs-card_footer">
-                  <span className="cs-card_btn_1" data-modal="#history_1">
-                    <i className="fas fa-redo fa-fw" />
-                    View History
-                  </span>
-                  <span className="cs-card_btn_2" data-modal="#bid_1">
-                    <span>Place Bid</span>
-                  </span>
-                </div>
-              </div>
-            </div>
+            {dataCards.map((data, idx) => (
+              <Card
+                key={idx}
+                LuotLike={data.LuotLike}
+                img={data.img}
+                avatarInfo={data.avatarInfo}
+                info={data.info}
+                price={data.price}
+                title={data.title}
+              ></Card>
+            ))}
           </div>
         </div>
         <div className="cs-height_100 cs-height_lg_70" />
