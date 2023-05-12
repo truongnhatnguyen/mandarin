@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Head } from "src/components/Head";
 import { CustomSwiper } from "./CustomSwiper";
 import { Card } from "src/components/Card";
+import { useData } from "src/hooks/useData";
 
 const dataCards = [
   {
@@ -48,6 +49,11 @@ const dataCards = [
 ];
 
 export function ExploreDetails() {
+  const { data } = useData({
+    path: "assets/exploredetails/datas.json",
+    defaultValue: [],
+  });
+
   return (
     <>
       <div>
@@ -95,7 +101,7 @@ export function ExploreDetails() {
               </div>
               <div className="cs-height_25 cs-height_lg_25" />
               <div className="grid gap-4">
-                <div className=" rounded-md w-full h-80">
+                <div className="rounded-md w-full h-80">
                   <img
                     src="https://swiperjs.com/demos/images/nature-1.jpg"
                     alt=""

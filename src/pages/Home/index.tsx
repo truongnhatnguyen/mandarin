@@ -1,4 +1,3 @@
-import { CardSlider } from "src/components/SlickSlider/CardSlider";
 import { Banner } from "./Banner";
 import { Catagory } from "./Category";
 import { Collections } from "./Collections";

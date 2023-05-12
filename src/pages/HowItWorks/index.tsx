@@ -1,5 +1,39 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Head } from "src/components/Head";
+import { Accordians } from "./Accordians";
+const datas = [
+  {
+    title: "How do I get started in NFT?",
+    content:
+      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
+  },
+  {
+    title: "How do I get started in NFT?",
+    content:
+      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
+  },
+  {
+    title: "How do I get started in NFT?",
+    content:
+      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
+  },
+  {
+    title: "How do I get started in NFT?",
+    content:
+      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
+  },
+  {
+    title: "How do I get started in NFT?",
+    content:
+      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
+  },
+  {
+    title: "How do I get started in NFT?",
+    content:
+      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
+  },
+];
 
 export function HowItWorks() {
   return (
@@ -7,22 +41,7 @@ export function HowItWorks() {
       <div>
         <div className="cs-height_90 cs-height_lg_80" />
         {/* Start Page Head */}
-        <section
-          className="cs-page_head cs-bg"
-          data-src="assets/img/page_head_bg.svg"
-        >
-          <div className="sm:container sm:mx-auto mx-4">
-            <div className="text-center">
-              <h1 className="cs-page_title">How It Works</h1>
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <NavLink to="index.html">Home</NavLink>
-                </li>
-                <li className="breadcrumb-item active">How It Works</li>
-              </ol>
-            </div>
-          </div>
-        </section>
+        <Head title="How It Works"></Head>
         {/* End Page Head */}
 
         {/* Start Icon Boxes */}
@@ -206,174 +225,7 @@ export function HowItWorks() {
                   </div>
                   <div className="cs-height_30 cs-height_lg_30" />
                   <div className="cs-accordians">
-                    <div className="cs-accordian active">
-                      <div className="cs-accordian_head">
-                        <h2 className="cs-accordian_title">
-                          How do I get started in NFT?
-                        </h2>
-                        <span className="cs-accordian_toggle">
-                          <svg
-                            width={13}
-                            height={7}
-                            viewBox="0 0 13 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.62109 0.750977L6.95443 6.08431L12.2878 0.750977"
-                              stroke="currentColor"
-                              strokeWidth="1.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="cs-accordian-body">
-                        <b>Step 1:</b> Decide on the concept.
-                        <b>Step 2:</b> Decide on the platform. <br />
-                        <b>Step 3:</b> Connect and build community.
-                        <b>Step 4:</b> Create your art. <br />
-                        <b>Step 5:</b> Mint and share.
-                        <b>The final step:</b> Selling your NFT.
-                      </div>
-                    </div>
-                    {/* .cs-accordian */}
-                    <div className="cs-accordian">
-                      <div className="cs-accordian_head">
-                        <h2 className="cs-accordian_title">
-                          How much does the average NFT sell for?
-                        </h2>
-                        <span className="cs-accordian_toggle">
-                          <svg
-                            width={13}
-                            height={7}
-                            viewBox="0 0 13 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.62109 0.750977L6.95443 6.08431L12.2878 0.750977"
-                              stroke="currentColor"
-                              strokeWidth="1.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="cs-accordian-body">
-                        <p>
-                          Once you have minted a piece of artwork on a
-                          marketplace as an <br />
-                          NFT, you should never mint it on another platform. If
-                          you ever decide <br />
-                          to do so, note that most platforms reserve
-                        </p>
-                      </div>
-                    </div>
-                    {/* .cs-accordian */}
-                    <div className="cs-accordian">
-                      <div className="cs-accordian_head">
-                        <h2 className="cs-accordian_title">
-                          What kind of NFTs sell best?
-                        </h2>
-                        <span className="cs-accordian_toggle">
-                          <svg
-                            width={13}
-                            height={7}
-                            viewBox="0 0 13 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.62109 0.750977L6.95443 6.08431L12.2878 0.750977"
-                              stroke="currentColor"
-                              strokeWidth="1.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="cs-accordian-body">
-                        <p>
-                          Once you have minted a piece of artwork on a
-                          marketplace as an <br />
-                          NFT, you should never mint it on another platform. If
-                          you ever decide <br />
-                          to do so, note that most platforms reserve
-                        </p>
-                      </div>
-                    </div>
-                    {/* .cs-accordian */}
-                    <div className="cs-accordian">
-                      <div className="cs-accordian_head">
-                        <h2 className="cs-accordian_title">
-                          How to make money with NFTs as a beginner?
-                        </h2>
-                        <span className="cs-accordian_toggle">
-                          <svg
-                            width={13}
-                            height={7}
-                            viewBox="0 0 13 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.62109 0.750977L6.95443 6.08431L12.2878 0.750977"
-                              stroke="currentColor"
-                              strokeWidth="1.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="cs-accordian-body">
-                        <p>
-                          Once you have minted a piece of artwork on a
-                          marketplace as an <br />
-                          NFT, you should never mint it on another platform. If
-                          you ever decide <br />
-                          to do so, note that most platforms reserve
-                        </p>
-                      </div>
-                    </div>
-                    {/* .cs-accordian */}
-                    <div className="cs-accordian">
-                      <div className="cs-accordian_head">
-                        <h2 className="cs-accordian_title">
-                          Who owns the most expensive NFT?
-                        </h2>
-                        <span className="cs-accordian_toggle">
-                          <svg
-                            width={13}
-                            height={7}
-                            viewBox="0 0 13 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.62109 0.750977L6.95443 6.08431L12.2878 0.750977"
-                              stroke="currentColor"
-                              strokeWidth="1.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="cs-accordian-body">
-                        <p>
-                          Once you have minted a piece of artwork on a
-                          marketplace as an <br />
-                          NFT, you should never mint it on another platform. If
-                          you ever decide <br />
-                          to do so, note that most platforms reserve
-                        </p>
-                      </div>
-                    </div>
+                    <Accordians datas={datas}></Accordians>
                     {/* .cs-accordian */}
                   </div>
                   {/* .cs-accordians */}
@@ -390,176 +242,7 @@ export function HowItWorks() {
                   </div>
                   <div className="cs-height_30 cs-height_lg_30" />
                   <div className="cs-accordians">
-                    <div className="cs-accordian active">
-                      <div className="cs-accordian_head">
-                        <h2 className="cs-accordian_title">
-                          Do you have to mint an NFT to sell it?
-                        </h2>
-                        <span className="cs-accordian_toggle">
-                          <svg
-                            width={13}
-                            height={7}
-                            viewBox="0 0 13 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.62109 0.750977L6.95443 6.08431L12.2878 0.750977"
-                              stroke="currentColor"
-                              strokeWidth="1.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="cs-accordian-body">
-                        <p>
-                          Once you have minted a piece of artwork on a
-                          marketplace as an <br />
-                          NFT, you should never mint it on another platform. If
-                          you ever decide <br />
-                          to do so, note that most platforms reserve
-                        </p>
-                      </div>
-                    </div>
-                    {/* .cs-accordian */}
-                    <div className="cs-accordian">
-                      <div className="cs-accordian_head">
-                        <h2 className="cs-accordian_title">
-                          How much does the average NFT sell for?
-                        </h2>
-                        <span className="cs-accordian_toggle">
-                          <svg
-                            width={13}
-                            height={7}
-                            viewBox="0 0 13 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.62109 0.750977L6.95443 6.08431L12.2878 0.750977"
-                              stroke="currentColor"
-                              strokeWidth="1.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="cs-accordian-body">
-                        <p>
-                          Once you have minted a piece of artwork on a
-                          marketplace as an <br />
-                          NFT, you should never mint it on another platform. If
-                          you ever decide <br />
-                          to do so, note that most platforms reserve
-                        </p>
-                      </div>
-                    </div>
-                    {/* .cs-accordian */}
-                    <div className="cs-accordian">
-                      <div className="cs-accordian_head">
-                        <h2 className="cs-accordian_title">
-                          What kind of NFTs sell best?
-                        </h2>
-                        <span className="cs-accordian_toggle">
-                          <svg
-                            width={13}
-                            height={7}
-                            viewBox="0 0 13 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.62109 0.750977L6.95443 6.08431L12.2878 0.750977"
-                              stroke="currentColor"
-                              strokeWidth="1.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="cs-accordian-body">
-                        <p>
-                          Once you have minted a piece of artwork on a
-                          marketplace as an <br />
-                          NFT, you should never mint it on another platform. If
-                          you ever decide <br />
-                          to do so, note that most platforms reserve
-                        </p>
-                      </div>
-                    </div>
-                    {/* .cs-accordian */}
-                    <div className="cs-accordian">
-                      <div className="cs-accordian_head">
-                        <h2 className="cs-accordian_title">
-                          How to make money with NFTs as a beginner?
-                        </h2>
-                        <span className="cs-accordian_toggle">
-                          <svg
-                            width={13}
-                            height={7}
-                            viewBox="0 0 13 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.62109 0.750977L6.95443 6.08431L12.2878 0.750977"
-                              stroke="currentColor"
-                              strokeWidth="1.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="cs-accordian-body">
-                        <p>
-                          Once you have minted a piece of artwork on a
-                          marketplace as an <br />
-                          NFT, you should never mint it on another platform. If
-                          you ever decide <br />
-                          to do so, note that most platforms reserve
-                        </p>
-                      </div>
-                    </div>
-                    {/* .cs-accordian */}
-                    <div className="cs-accordian">
-                      <div className="cs-accordian_head">
-                        <h2 className="cs-accordian_title">
-                          Who owns the most expensive NFT?
-                        </h2>
-                        <span className="cs-accordian_toggle">
-                          <svg
-                            width={13}
-                            height={7}
-                            viewBox="0 0 13 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M1.62109 0.750977L6.95443 6.08431L12.2878 0.750977"
-                              stroke="currentColor"
-                              strokeWidth="1.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="cs-accordian-body">
-                        <p>
-                          Once you have minted a piece of artwork on a
-                          marketplace as an <br />
-                          NFT, you should never mint it on another platform. If
-                          you ever decide <br />
-                          to do so, note that most platforms reserve
-                        </p>
-                      </div>
-                    </div>
-                    {/* .cs-accordian */}
+                    <Accordians datas={datas}></Accordians>
                   </div>
                   {/* .cs-accordians */}
                 </div>

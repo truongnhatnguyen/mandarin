@@ -1,5 +1,6 @@
 import { Link } from "src/shared/components/Link";
 import "./Footer.css";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -10,7 +11,12 @@ export const Footer = () => {
         <div className="flex flex-row flex-wrap">
           <div className="basis-8/12">
             <div className="flex flex-row flex-wrap">
-              <div className="sm:basis-4/12 basis-full">
+              <div className="sm:basis-3/12 basis-full">
+                <NavLink to="">
+                  <img src="assets/home/logo.png" alt="" />
+                </NavLink>
+              </div>
+              <div className="sm:basis-3/12 basis-full">
                 <div className="cs-footer_widget">
                   <h2 className="cs-widget_title">Marketplace</h2>
                   <ul className="cs-widget_nav">
@@ -36,7 +42,7 @@ export const Footer = () => {
                 </div>
               </div>
               {/* .col */}
-              <div className="sm:basis-4/12 basis-full">
+              <div className="sm:basis-3/12 basis-full">
                 <div className="cs-footer_widget">
                   <h2 className="cs-widget_title">Account</h2>
                   <ul className="cs-widget_nav">
@@ -64,7 +70,7 @@ export const Footer = () => {
                 </div>
               </div>
               {/* .col */}
-              <div className="sm:basis-4/12 basis-full">
+              <div className="sm:basis-3/12 basis-full">
                 <div className="cs-footer_widget">
                   <h2 className="cs-widget_title">Company</h2>
                   <ul className="cs-widget_nav">
@@ -115,22 +121,10 @@ export const Footer = () => {
               </form>
               <div className="cs-footer_social_btns">
                 <Link to="#">
-                  <i className="fab fa-facebook-f fa-fw" />
+                  <i className="fab fa-telegram fa-fw" />
                 </Link>
                 <Link to="#">
                   <i className="fab fa-twitter fa-fw" />
-                </Link>
-                <Link to="#">
-                  <i className="fab fa-linkedin-in fa-fw" />
-                </Link>
-                <Link to="#">
-                  <i className="fab fa-instagram fa-fw" />
-                </Link>
-                <Link to="#">
-                  <i className="fab fa-whatsapp fa-fw" />
-                </Link>
-                <Link to="#">
-                  <i className="fab fa-github fa-fw" />
                 </Link>
               </div>
             </div>

@@ -1,6 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { SlickSlider } from "src/components/SlickSlider";
+import { SlidesPerview } from "../../../components/SlidesPerView";
+import { SwiperSlide } from "swiper/react";
+import { CardCategory } from "./CardCategory";
+
+const datas = [
+  { img: "assets/home/category.png", title: "Action", subTitle: "View Game" },
+  { img: "assets/home/category1.png", title: "Action", subTitle: "View Game" },
+  { img: "assets/home/category2.png", title: "Action", subTitle: "View Game" },
+  { img: "assets/home/category3.png", title: "Action", subTitle: "View Game" },
+  { img: "assets/home/category4.png", title: "Action", subTitle: "View Game" },
+  { img: "assets/home/category.png", title: "Action", subTitle: "View Game" },
+  { img: "assets/home/category1.png", title: "Action", subTitle: "View Game" },
+  { img: "assets/home/category2.png", title: "Action", subTitle: "View Game" },
+  { img: "assets/home/category3.png", title: "Action", subTitle: "View Game" },
+  { img: "assets/home/category4.png", title: "Action", subTitle: "View Game" },
+];
 
 export function Catagory() {
   return (
@@ -25,144 +39,18 @@ export function Catagory() {
             data-add-slides={6}
           >
             <div className="cs-slider_wrapper">
-              <SlickSlider>
-                <div className="cs-slide">
-                  <NavLink
-                    to="#"
-                    className="cs-card cs-style6 cs-box_shadow cs-white_bg text-center"
-                  >
-                    <span className="cs-avatar">
-                      <img src="assets/img/avatar/avatar_38.png" alt="Avatar" />
-                    </span>
-                    <div className="cs-card_info">
-                      <h3 className="cs-card_title">Art</h3>
-                      <div className="cs-card_subtitle">
-                        Exercitation veniam
-                      </div>
-                    </div>
-                  </NavLink>
-                </div>
-                {/* .cs-slide */}
-                <div className="cs-slide">
-                  <NavLink
-                    to="#"
-                    className="cs-card cs-style6 cs-box_shadow cs-white_bg text-center"
-                  >
-                    <span className="cs-avatar">
-                      <img src="assets/img/avatar/avatar_39.png" alt="Avatar" />
-                    </span>
-                    <div className="cs-card_info">
-                      <h3 className="cs-card_title">Music</h3>
-                      <div className="cs-card_subtitle">
-                        Exercitation veniam
-                      </div>
-                    </div>
-                  </NavLink>
-                </div>
-                {/* .cs-slide */}
-                <div className="cs-slide">
-                  <NavLink
-                    to="#"
-                    className="cs-card cs-style6 cs-box_shadow cs-white_bg text-center"
-                  >
-                    <span className="cs-avatar">
-                      <img src="assets/img/avatar/avatar_40.png" alt="Avatar" />
-                    </span>
-                    <div className="cs-card_info">
-                      <h3 className="cs-card_title">Video</h3>
-                      <div className="cs-card_subtitle">
-                        Exercitation veniam
-                      </div>
-                    </div>
-                  </NavLink>
-                </div>
-                {/* .cs-slide */}
-                <div className="cs-slide">
-                  <NavLink
-                    to="#"
-                    className="cs-card cs-style6 cs-box_shadow cs-white_bg text-center"
-                  >
-                    <span className="cs-avatar">
-                      <img src="assets/img/avatar/avatar_41.png" alt="Avatar" />
-                    </span>
-                    <div className="cs-card_info">
-                      <h3 className="cs-card_title">Fashion</h3>
-                      <div className="cs-card_subtitle">
-                        Exercitation veniam
-                      </div>
-                    </div>
-                  </NavLink>
-                </div>
-                {/* .cs-slide */}
-                <div className="cs-slide">
-                  <NavLink
-                    to="#"
-                    className="cs-card cs-style6 cs-box_shadow cs-white_bg text-center"
-                  >
-                    <span className="cs-avatar">
-                      <img src="assets/img/avatar/avatar_42.png" alt="Avatar" />
-                    </span>
-                    <div className="cs-card_info">
-                      <h3 className="cs-card_title">Sports</h3>
-                      <div className="cs-card_subtitle">
-                        Exercitation veniam
-                      </div>
-                    </div>
-                  </NavLink>
-                </div>
-                {/* .cs-slide */}
-                <div className="cs-slide">
-                  <NavLink
-                    to="#"
-                    className="cs-card cs-style6 cs-box_shadow cs-white_bg text-center"
-                  >
-                    <span className="cs-avatar">
-                      <img src="assets/img/avatar/avatar_43.png" alt="Avatar" />
-                    </span>
-                    <div className="cs-card_info">
-                      <h3 className="cs-card_title">Collectibles</h3>
-                      <div className="cs-card_subtitle">
-                        Exercitation veniam
-                      </div>
-                    </div>
-                  </NavLink>
-                </div>
-                {/* .cs-slide */}
-                <div className="cs-slide">
-                  <NavLink
-                    to="#"
-                    className="cs-card cs-style6 cs-box_shadow cs-white_bg text-center"
-                  >
-                    <span className="cs-avatar">
-                      <img src="assets/img/avatar/avatar_38.png" alt="Avatar" />
-                    </span>
-                    <div className="cs-card_info">
-                      <h3 className="cs-card_title">Art</h3>
-                      <div className="cs-card_subtitle">
-                        Exercitation veniam
-                      </div>
-                    </div>
-                  </NavLink>
-                </div>
-                {/* .cs-slide */}
-                <div className="cs-slide">
-                  <NavLink
-                    to="#"
-                    className="cs-card cs-style6 cs-box_shadow cs-white_bg text-center"
-                  >
-                    <span className="cs-avatar">
-                      <img src="assets/img/avatar/avatar_40.png" alt="Avatar" />
-                    </span>
-                    <div className="cs-card_info">
-                      <h3 className="cs-card_title">Video</h3>
-                      <div className="cs-card_subtitle">
-                        Exercitation veniam
-                      </div>
-                    </div>
-                  </NavLink>
-                </div>
-                {/* .cs-slide */}
-              </SlickSlider>
+              <SlidesPerview slidesPerView={5} spaceBetween={20}>
+                {datas.map((data, idx) => (
+                  <SwiperSlide>
+                    <CardCategory
+                      key={idx}
+                      img={data.img}
+                      title={data.title}
+                      subTitle={data.subTitle}
+                    ></CardCategory>
+                  </SwiperSlide>
+                ))}
+              </SlidesPerview>
             </div>
           </div>
           {/* .cs-slider_container */}

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import {
   faAdd,
   faArrowUpRightDots,
@@ -40,11 +41,12 @@ export const YourWalletPopup: React.FC<Props> = ({ close }) => {
           <button className="text-primary text-sm" onClick={handleCopy}>
             Copy Address <FontAwesomeIcon icon={faCopy} />
           </button>
+
           <a
             className="text-primary text-sm"
             target="_blank"
             rel="noreferrer"
-            //   href={`https://bscscan.com/address/${account}`}
+            hrefLang={`https://bscscan.com/address/${account}`}
           >
             View on BSCScan <FontAwesomeIcon icon={faArrowUpRightDots} />
           </a>

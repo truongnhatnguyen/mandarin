@@ -20,5 +20,5 @@ export function Preloader() {
         <span>Loading</span>
       </div>
     </>
-  ); // or any other JSX if needed;
+  );
 }

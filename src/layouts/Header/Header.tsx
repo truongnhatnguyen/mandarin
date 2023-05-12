@@ -9,43 +9,10 @@ export const Header = () => {
           <div className="cs-main_header_in">
             <div className="cs-main_header_left">
               <NavLink className="cs-site_branding" to="index.html">
-                <img src="assets/img/logo.svg" alt="Logo" />
+                <img src="assets/home/logo.png" alt="Logo" />
               </NavLink>
             </div>
             <div className="cs-main_header_right">
-              <div className="cs-search_wrap">
-                <form action="#" className="cs-search">
-                  <input
-                    type="text"
-                    className="cs-search_input"
-                    placeholder="Search"
-                  />
-                  <button className="cs-search_btn">
-                    <svg
-                      width={20}
-                      height={21}
-                      viewBox="0 0 20 21"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.16667 16.3333C12.8486 16.3333 15.8333 13.3486 15.8333 9.66667C15.8333 5.98477 12.8486 3 9.16667 3C5.48477 3 2.5 5.98477 2.5 9.66667C2.5 13.3486 5.48477 16.3333 9.16667 16.3333Z"
-                        stroke="currentColor"
-                        strokeOpacity="0.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M17.5 18L13.875 14.375"
-                        stroke="currentColor"
-                        strokeOpacity="0.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </form>
-              </div>
               <Menu />
               <div className="cs-header_btns_wrap">
                 <div className="cs-header_btns">
@@ -71,127 +38,8 @@ export const Header = () => {
                       />
                     </svg>
                   </div>
-                  <div className="cs-toggle_box cs-notification_box">
-                    <div className="cs-toggle_btn cs-header_icon_btn cs-center">
-                      <svg
-                        width={19}
-                        height={19}
-                        viewBox="0 0 19 19"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M14 6.63916C14 5.44569 13.5259 4.30109 12.682 3.45718C11.8381 2.61327 10.6935 2.13916 9.5 2.13916C8.30653 2.13916 7.16193 2.61327 6.31802 3.45718C5.47411 4.30109 5 5.44569 5 6.63916C5 11.8892 2.75 13.3892 2.75 13.3892H16.25C16.25 13.3892 14 11.8892 14 6.63916Z"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M10.7981 16.3887C10.6663 16.616 10.477 16.8047 10.2493 16.9358C10.0216 17.067 9.76341 17.136 9.50063 17.136C9.23784 17.136 8.97967 17.067 8.75196 16.9358C8.52424 16.8047 8.33498 16.616 8.20312 16.3887"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <span className="cs-btn_badge">8</span>
-                    </div>
-                    <div className="cs-toggle_body">
-                      <h3 className="cs-notification_title">
-                        Notifications 10
-                      </h3>
-                      <ul className="cs-notification_list">
-                        <li>
-                          <NavLink to="#" className="cs-notification_item">
-                            <div className="cs-notification_thumb">
-                              <img
-                                src="assets/img/general/notificaiton_1.jpeg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cs-notification_right">
-                              <p>@mark joshef purchased</p>
-                              <h4>Digital NFT Art</h4>
-                            </div>
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="#" className="cs-notification_item">
-                            <div className="cs-notification_thumb">
-                              <img
-                                src="assets/img/general/notificaiton_2.jpeg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cs-notification_right">
-                              <p>@ellen capaso commented</p>
-                              <h4>Digital NFT Art</h4>
-                            </div>
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="#" className="cs-notification_item">
-                            <div className="cs-notification_thumb">
-                              <img
-                                src="assets/img/general/notificaiton_3.jpeg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cs-notification_right">
-                              <p>@steve boone started following you.</p>
-                            </div>
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="#" className="cs-notification_item">
-                            <div className="cs-notification_thumb">
-                              <img
-                                src="assets/img/general/notificaiton_4.jpeg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cs-notification_right">
-                              <p>@mark jos just share</p>
-                              <h4>Digital NFT Art</h4>
-                            </div>
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="#" className="cs-notification_item">
-                            <div className="cs-notification_thumb">
-                              <img
-                                src="assets/img/general/notificaiton_5.jpeg"
-                                alt=""
-                              />
-                            </div>
-                            <div className="cs-notification_right">
-                              <p>@richard steger purchased</p>
-                              <h4>Digital NFT Art</h4>
-                            </div>
-                          </NavLink>
-                        </li>
-                      </ul>
-                      <div className="text-center">
-                        <NavLink to="#" className="cs-btn cs-style1">
-                          <span>
-                            View More
-                            <svg
-                              width={14}
-                              height={13}
-                              viewBox="0 0 14 13"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M13.4366 7.01471C13.7295 6.72181 13.7295 6.24694 13.4366 5.95404L8.66361 1.18107C8.37072 0.888181 7.89584 0.888181 7.60295 1.18107C7.31006 1.47397 7.31006 1.94884 7.60295 2.24173L11.8456 6.48438L7.60295 10.727C7.31006 11.0199 7.31006 11.4948 7.60295 11.7877C7.89584 12.0806 8.37072 12.0806 8.66361 11.7877L13.4366 7.01471ZM0.90625 7.23438H12.9062V5.73438H0.90625V7.23438Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </span>
-                        </NavLink>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="cs-toggle_box cs-profile_box">
+
+                  {/* <div className="cs-toggle_box cs-profile_box">
                     <div className="cs-toggle_btn cs-header_icon_btn cs-center">
                       <svg
                         width={19}
@@ -282,7 +130,7 @@ export const Header = () => {
                         </NavLink>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <NavLink
                     to="connect-wallet.html"
                     className="cs-btn cs-style1"

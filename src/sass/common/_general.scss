@@ -1310,8 +1310,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: $accent;
-    color: #fff;
+    background-color: white;
+    color: #080808;
     position: relative;
     margin: 7px;
     i,
@@ -1342,6 +1342,52 @@
 }
 
 .cs-social_widget.cs-share_btns {
+  justify-content: center;
+}
+
+.cs-social_widget-home {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -7px;
+  a {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    color: #080808;
+    position: relative;
+    margin: 7px;
+    i,
+    svg {
+      position: relative;
+      z-index: 1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: inherit;
+      background: linear-gradient(116.85deg, #fc466b 0%, #3f5efb 100%);
+      opacity: 0;
+      transition: all 0.4s ease;
+    }
+    &:hover {
+      background-color: transparent;
+      transition-delay: 0.2s;
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.cs-social_widget-home.cs-share_btns {
   justify-content: center;
 }
 

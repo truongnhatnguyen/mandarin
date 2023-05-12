@@ -20,7 +20,6 @@ import { Page404 } from "./pages/404Page";
 import { ExploreDetails } from "./pages/ExploreDetails";
 import { Explore } from "./pages/Explore";
 import { About } from "./pages/About";
-import { Preloader } from "./components/Preloader";
 
 function App() {
   return (
