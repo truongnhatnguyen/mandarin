@@ -10,6 +10,9 @@ export function CTA(
     href?: string;
   }
 ) {
+  const href = useMemo(() => {
+    return props.href || "";
+  }, [props.href]);
   return (
     <>
       {props.textLeft ? (
@@ -18,7 +21,7 @@ export function CTA(
             <div className="cs-cta_right">
               <h2 className="cs-cta_title">{props.CtaTitle}</h2>
               <div className="cs-cta_subtitle">{props.CtaSubtitle}</div>
-              <NavLink to="/explore" className="cs-btn cs-style1 cs-btn_lg">
+              <NavLink to={href} className="cs-btn cs-style1 cs-btn_lg">
                 <span>{props.btnName}</span>
               </NavLink>
             </div>
@@ -36,10 +39,7 @@ export function CTA(
             <div className="cs-cta_right">
               <h2 className="cs-cta_title">{props.CtaTitle}</h2>
               <div className="cs-cta_subtitle">{props.CtaSubtitle}</div>
-              <NavLink
-                to="/connect-wallet"
-                className="cs-btn cs-style1 cs-btn_lg"
-              >
+              <NavLink to={href} className="cs-btn cs-style1 cs-btn_lg">
                 <span>{props.btnName}</span>
               </NavLink>
             </div>
