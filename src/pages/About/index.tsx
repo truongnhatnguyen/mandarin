@@ -62,7 +62,7 @@ export function About() {
               To receive our valuable members-only offers
             </div>
             <NavLink
-              to="register.html"
+              to="/presale"
               className="cs-btn cs-style1 cs-btn_lg cs-color2"
             >
               <span>Buy Presale</span>
