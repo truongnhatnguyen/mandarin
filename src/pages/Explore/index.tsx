@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { Card } from "src/components/Card";
 import { Head } from "src/components/Head";
 import { MenuFilter } from "src/components/MenuFilter";
@@ -523,6 +523,19 @@ export function Explore() {
   //   path: "assets/explore/datas.json",
   //   defaultValue: [],
   // });
+  const { search } = useLocation();
+  const category = new URLSearchParams(search).get("category");
+
+  console.log(category);
+
+  useEffect(() => {
+    if (category) {
+      handleFilterClick(category);
+    } else {
+      setActiveFilter(labelFilters[0]);
+    }
+  }, [category]);
+
   const [activeFilter, setActiveFilter] = useState(labelFilters[0]);
   const [tmpDatas, setTmpDatas] = useState<DataCards[]>(dataCards);
   const [page, setPage] = useState(1);

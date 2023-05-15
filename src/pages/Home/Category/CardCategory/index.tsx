@@ -11,7 +11,7 @@ export function CardCategory(
   return (
     <div className="cs-slide">
       <NavLink
-        to="#"
+        to={`/explore?category=${props.title}`}
         className="cs-card cs-style6 cs-box_shadow cs-white_bg text-center"
       >
         <span className="cs-avatar">

@@ -5,15 +5,27 @@ import { CardCategory } from "./CardCategory";
 
 const datas = [
   { img: "assets/home/category.png", title: "Action", subTitle: "View Game" },
-  { img: "assets/home/category1.png", title: "Action", subTitle: "View Game" },
-  { img: "assets/home/category2.png", title: "Action", subTitle: "View Game" },
-  { img: "assets/home/category3.png", title: "Action", subTitle: "View Game" },
-  { img: "assets/home/category4.png", title: "Action", subTitle: "View Game" },
-  { img: "assets/home/category.png", title: "Action", subTitle: "View Game" },
-  { img: "assets/home/category1.png", title: "Action", subTitle: "View Game" },
-  { img: "assets/home/category2.png", title: "Action", subTitle: "View Game" },
-  { img: "assets/home/category3.png", title: "Action", subTitle: "View Game" },
-  { img: "assets/home/category4.png", title: "Action", subTitle: "View Game" },
+  { img: "assets/home/category1.png", title: "Sport", subTitle: "View Game" },
+  {
+    img: "assets/home/category2.png",
+    title: "Simulation",
+    subTitle: "View Game",
+  },
+  {
+    img: "assets/home/category3.png",
+    title: "Strategy",
+    subTitle: "View Game",
+  },
+  {
+    img: "assets/home/category4.png",
+    title: "Survival",
+    subTitle: "View Game",
+  },
+  {
+    img: "assets/home/category.png",
+    title: "Role-playing",
+    subTitle: "View Game",
+  },
 ];
 
 export function Catagory() {
