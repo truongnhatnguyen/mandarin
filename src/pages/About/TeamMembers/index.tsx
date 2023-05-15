@@ -56,7 +56,7 @@ const datas = [
 
 export function TeamMembers() {
   return (
-    <div className="container-auto">
+    <div className="sm:container sm:mx-auto mx-5">
       <h2 className="cs-section_heading cs-style1 text-center">
         Meet Our Team
       </h2>

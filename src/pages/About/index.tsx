@@ -54,7 +54,7 @@ export function About() {
         {/* End Team members */}
         <div className="cs-height_100 cs-height_lg_70" />
         {/* Start CTA */}
-        <div className="container-auto">
+        <div className="sm:container sm:mx-auto mx-5">
           <div className="cs-cta cs-style2 text-center cs-accent_bg">
             <h2 className="cs-cta_title cs-white_color_8">Buy Pre-sale Now</h2>
             <div className="cs-cta_subtitle cs-white_color_8">

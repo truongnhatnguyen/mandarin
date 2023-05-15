@@ -28,7 +28,10 @@ export function ConnectWallet() {
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
                 </div>
-                <NavLink to="#" className="cs-iconbox_btn cs-primary_font">
+                <NavLink
+                  to="/connect-wallet"
+                  className="cs-iconbox_btn cs-primary_font"
+                >
                   Connect Wallet
                   <svg
                     width={17}
@@ -58,7 +61,10 @@ export function ConnectWallet() {
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
                 </div>
-                <NavLink to="#" className="cs-iconbox_btn cs-primary_font">
+                <NavLink
+                  to="/connect-wallet"
+                  className="cs-iconbox_btn cs-primary_font"
+                >
                   Connect Wallet
                   <svg
                     width={17}
@@ -88,7 +94,10 @@ export function ConnectWallet() {
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
                 </div>
-                <NavLink to="#" className="cs-iconbox_btn cs-primary_font">
+                <NavLink
+                  to="/connect-wallet"
+                  className="cs-iconbox_btn cs-primary_font"
+                >
                   Connect Wallet
                   <svg
                     width={17}

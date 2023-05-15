@@ -131,10 +131,7 @@ export const Header = () => {
                       </div>
                     </div>
                   </div> */}
-                  <NavLink
-                    to="connect-wallet.html"
-                    className="cs-btn cs-style1"
-                  >
+                  <NavLink to="connect-wallet" className="cs-btn cs-style1">
                     <span>Connect Wallet</span>
                   </NavLink>
                 </div>

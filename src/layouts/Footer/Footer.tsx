@@ -61,7 +61,7 @@ export const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="connect-wallet.html">Connect wallet</Link>
+                      <Link to="/connect-wallet">Connect wallet</Link>
                     </li>
                     <li>
                       <Link to="explore-1.html">Wishlist</Link>
@@ -137,7 +137,7 @@ export const Footer = () => {
           <div className="cs-footer_separetor" />
           <div className="cs-footer_bottom_in">
             <div className="cs-copyright">
-              Copyright 2022. Created by Thememarch.
+              Copyright 2022. Created by Mandarin.
             </div>
             <ul className="cs-footer_menu">
               <li>
