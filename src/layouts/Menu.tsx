@@ -15,21 +15,14 @@ const lstMenus = [
     label: "How it works",
     path: "how-it-works",
   },
-  {
-    label: "Community",
-    path: "how-it-works",
-  },
-  {
-    label: "Blogs",
-    path: "blogs",
-  },
+
   {
     label: "About Us",
     path: "about",
   },
   {
-    label: "Contract",
-    path: "contract",
+    label: "Contact",
+    path: "contact",
   },
 ];
 
