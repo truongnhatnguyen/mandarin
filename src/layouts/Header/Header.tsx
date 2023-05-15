@@ -8,7 +8,7 @@ export const Header = () => {
         <div className="container-fluid">
           <div className="cs-main_header_in">
             <div className="cs-main_header_left">
-              <NavLink className="cs-site_branding" to="index.html">
+              <NavLink className="cs-site_branding" to="/">
                 <img src="assets/home/logo.png" alt="Logo" />
               </NavLink>
             </div>

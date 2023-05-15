@@ -141,10 +141,10 @@ export const Footer = () => {
             </div>
             <ul className="cs-footer_menu">
               <li>
-                <Link to="privacy-policy.html">Privacy Policy</Link>
+                <NavLink to="privacy">Privacy Policy</NavLink>
               </li>
               <li>
-                <Link to="terms-condition.html">Term &amp; Condition</Link>
+                <NavLink to="term">Term &amp; Condition</NavLink>
               </li>
             </ul>
           </div>

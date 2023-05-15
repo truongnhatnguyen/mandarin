@@ -38,7 +38,7 @@ function App() {
         >
           <Route index element={<HomePage />} />
           <Route path="how-it-works" element={<HowItWorks />} />
-          <Route path="contract" element={<Contact />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
           <Route path="connect-wallet" element={<ConnectWallet />} />
           <Route path="explore-details/:id" element={<ExploreDetails />} />
