@@ -1,9 +1,10 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useMemo } from "react";
+import { NavLink, useParams } from "react-router-dom";
 import { Head } from "src/components/Head";
 import { CustomSwiper } from "./CustomSwiper";
 import { Card } from "src/components/Card";
 import { useData } from "src/hooks/useData";
+import { log } from "console";
 
 const dataCards = [
   {
@@ -49,10 +50,17 @@ const dataCards = [
 ];
 
 export function ExploreDetails() {
+  const { id } = useParams();
   const { data } = useData({
     path: "assets/exploredetails/datas.json",
     defaultValue: [],
   });
+  console.log(data);
+  const datas = useMemo(() => {
+    return data.filter((item) => item === id);
+  }, [id]);
+
+  console.log(datas);
 
   return (
     <>

@@ -9,6 +9,7 @@ export function Card(
     price: string;
     img: string;
     title: string;
+    // id: number;
   }
 ) {
   return (
@@ -17,7 +18,10 @@ export function Card(
         <i className="fas fa-heart fa-fw" />
         {props.LuotLike}
       </span>
-      <NavLink to="/explore-details" className="cs-card_thumb cs-zoom_effect">
+      <NavLink
+        to="/explore-details/:id"
+        className="cs-card_thumb cs-zoom_effect"
+      >
         <img src={props.img} alt="" className="cs-zoom_item" />
       </NavLink>
       <div className="cs-card_info">

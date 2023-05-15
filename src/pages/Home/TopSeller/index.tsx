@@ -90,7 +90,7 @@ export function TopSeller() {
     <section>
       <div className="sm:container sm:mx-auto mx-4">
         <h2 className="cs-section_heading cs-style1 text-center">
-          Top Seller in 1 Week
+          Top Game in 1 Week
         </h2>
         <div className="cs-height_45 cs-height_lg_45" />
 

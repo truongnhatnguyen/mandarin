@@ -20,6 +20,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    category: "Sport",
   },
   {
     LuotLike: "1.2K",
@@ -28,6 +29,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    category: "Sport",
   },
   {
     LuotLike: "1.2K",
@@ -36,6 +38,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    category: "Sport",
   },
   {
     LuotLike: "1.2K",
@@ -44,6 +47,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    category: "Sport",
   },
   {
     LuotLike: "1.2K",
@@ -52,6 +56,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    category: "Sport",
   },
   {
     LuotLike: "1.2K",
@@ -60,6 +65,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    category: "Simulation",
   },
   {
     LuotLike: "1.2K",
@@ -68,6 +74,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    category: "Simulation",
   },
   {
     LuotLike: "1.2K",
@@ -76,6 +83,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    category: "Simulation",
   },
   {
     LuotLike: "1.2K",
@@ -84,6 +92,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    category: "Simulation",
   },
   {
     LuotLike: "1.2K",
@@ -92,15 +101,184 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    category: "Simulation",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar4.png",
+    avatarInfo: "assets/exploredetails/avatar-similar3.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Strategy",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar3.png",
+    avatarInfo: "assets/exploredetails/avatar-similar2.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Strategy",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar2.png",
+    avatarInfo: "assets/exploredetails/avatar-similar1.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Strategy",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar1.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Strategy",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Strategy",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar4.png",
+    avatarInfo: "assets/exploredetails/avatar-similar3.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Sport",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar3.png",
+    avatarInfo: "assets/exploredetails/avatar-similar2.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Sport",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar2.png",
+    avatarInfo: "assets/exploredetails/avatar-similar1.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Sport",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar1.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Action",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Action",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar1.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Role-Playing",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Role-Playing",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Role-Playing",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar1.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Sport",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Survival",
+  },
+  {
+    LuotLike: "1.2K",
+    img: "assets/exploredetails/similar.png",
+    avatarInfo: "assets/exploredetails/avatar-similar.png",
+    info: "austin R.",
+    price: "0.29 --DR",
+    title: "Kawaii-bubble-tea",
+    category: "Sport",
   },
 ];
 
+interface DataCards {
+  LuotLike: string;
+  img: string;
+  avatarInfo: string;
+  info: string;
+  price: string;
+  title: string;
+  category: string;
+}
+
 export function NewItem() {
-  const [activeFilter, setActiveFilter] = useState("All Game");
+  const [activeFilter, setActiveFilter] = useState(labelFilters[0]);
+  const [tmpDatas, setTmpDatas] = useState<DataCards[]>(dataCards);
+  // const [page, setPage] = useState(1);
 
   const handleFilterClick = (filter: string) => {
     setActiveFilter(filter);
+    if (filter === "All Game") {
+      return setTmpDatas(dataCards);
+    } else {
+      const newArr = dataCards.filter((item) => item.category === filter);
+      setTmpDatas(newArr as any);
+    }
   };
+
+  // const handleLoadMore = () => {
+  //   setPage((prevPage) => prevPage + 1);
+  // };
+
+  // const productsToShow = tmpDatas.slice(0, page * 10);
   return (
     <section>
       <div className="sm:container sm:mx-auto mx-5">
@@ -109,7 +287,7 @@ export function NewItem() {
             <h2 className="cs-section_title">New Items</h2>
           </div>
           <div className="cs-section_right">
-            <NavLink to="explore-1.html" className="cs-btn cs-style1">
+            <NavLink to="/explore" className="cs-btn cs-style1">
               <span>Explore More</span>
             </NavLink>
           </div>
@@ -170,7 +348,7 @@ export function NewItem() {
         ></MenuFilter>
         <div className="cs-height_45 cs-height_lg_45" />
         <div className="cs-grid_5 cs-gap_30">
-          {dataCards.map((data, idx) => (
+          {tmpDatas.map((data, idx) => (
             <Card
               key={idx}
               LuotLike={data.LuotLike}
