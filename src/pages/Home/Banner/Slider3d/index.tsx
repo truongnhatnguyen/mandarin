@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { SwiperSlide, Swiper } from "swiper/react";
 
@@ -9,98 +9,52 @@ import "swiper/css/navigation";
 import { Card } from "src/components/Card";
 import { EffectCoverflow, Navigation, Pagination } from "swiper";
 
-const dataCards = [
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar1.png",
-    avatarInfo: "assets/exploredetails/avatar-similar.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-  },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar.png",
-    avatarInfo: "assets/exploredetails/avatar-similar.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-  },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar4.png",
-    avatarInfo: "assets/exploredetails/avatar-similar3.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-  },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar3.png",
-    avatarInfo: "assets/exploredetails/avatar-similar2.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-  },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar2.png",
-    avatarInfo: "assets/exploredetails/avatar-similar1.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-  },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar1.png",
-    avatarInfo: "assets/exploredetails/avatar-similar.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-  },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar.png",
-    avatarInfo: "assets/exploredetails/avatar-similar.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-  },
-];
+interface DataCards {
+  LuotLike: string;
+  img: string;
+  avatarInfo: string;
+  info: string;
+  price: string;
+  title: string;
+  category: string;
+  id: string;
+}
 
-export function Slider3d() {
+export function Slider3d(
+  props: React.PropsWithChildren & {
+    dataCards: DataCards[];
+  }
+) {
   return (
-    <div className="swiper-container">
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-      >
-        {dataCards.map((data, idx) => (
-          <SwiperSlide>
-            {/* <div
-              className={`${
-                idx === 1
-                  ? " slick-slide slick-current slick-active slick-center"
-                  : "slick-slide slick-cloned "
-              }`}
-              aria-hidden="true"
-              id=""
-              data-slick-index={-idx + 1}
-              style={{ width: 243 }}
-            >
-              <div> */}
-            {/* <div className="cs-slide !w-full !inline-block"> */}
+    <Swiper
+      effect={"coverflow"}
+      grabCursor={true}
+      centeredSlides={true}
+      loop={true}
+      slidesPerView={2}
+      breakpoints={{
+        350: { slidesPerView: 3 },
+        640: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        1024: {
+          slidesPerView: 2,
+        },
+      }}
+      spaceBetween={70}
+      coverflowEffect={{
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 3.5,
+      }}
+      modules={[EffectCoverflow, Pagination, Navigation]}
+      navigation={{ nextEl: ".cs-left_arrow", prevEl: ".cs-right_arrow" }}
+    >
+      {props.dataCards.map((data, idx) => (
+        <SwiperSlide>
+          <div className="slick-slide slick-current slick-active slick-center">
             <Card
+              id={data.id}
               key={idx}
               LuotLike={data.LuotLike}
               img={data.img}
@@ -109,12 +63,9 @@ export function Slider3d() {
               price={data.price}
               title={data.title}
             ></Card>
-            {/* </div> */}
-            {/* </div> */}
-            {/* </div> */}
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 }

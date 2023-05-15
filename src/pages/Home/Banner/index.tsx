@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { Card } from "src/components/Card";
+import { Slider3d } from "./Slider3d";
 
-const dataCards = [
+const dataCards: any = [
   {
     LuotLike: "1.2K",
     img: "assets/exploredetails/similar1.png",
@@ -9,6 +9,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    id: "sport-7",
   },
   {
     LuotLike: "1.2K",
@@ -17,6 +18,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    id: "sport-6",
   },
   {
     LuotLike: "1.2K",
@@ -25,6 +27,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    id: "sport-5",
   },
   {
     LuotLike: "1.2K",
@@ -33,6 +36,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    id: "sport-1",
   },
   {
     LuotLike: "1.2K",
@@ -41,6 +45,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    id: "sport-4",
   },
   {
     LuotLike: "1.2K",
@@ -49,6 +54,7 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    id: "sport-2",
   },
   {
     LuotLike: "1.2K",
@@ -57,12 +63,11 @@ const dataCards = [
     info: "austin R.",
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
+    id: "sport-3",
   },
 ];
 
 export function Banner() {
-  function handleNext() {}
-  function handlePre() {}
   return (
     <section
       className="cs-hero cs-style4 cs-bg cs-center"
@@ -98,7 +103,7 @@ export function Banner() {
           </div>
           <div className="cs-hero_in_right ">
             <div className="cs-slider cs-style1">
-              <div
+              {/* <div
                 className="cs-slider_container"
                 data-autoplay={0}
                 data-loop={1}
@@ -153,13 +158,10 @@ export function Banner() {
                     </div>
                   </div>
                 </div>
-              </div>
-              {/* .cs-slider_container */}
+              </div> */}
+              <Slider3d dataCards={dataCards} />
               <div className="cs-slider_arrows cs-style1 cs-center cs-hidden_mobile">
-                <div
-                  className="cs-left_arrow cs-center cs-box_shadow slick-arrow"
-                  onClick={handleNext}
-                >
+                <div className="cs-left_arrow cs-center cs-box_shadow slick-arrow">
                   <svg
                     width={14}
                     height={15}
@@ -183,10 +185,7 @@ export function Banner() {
                     />
                   </svg>
                 </div>
-                <div
-                  className="cs-right_arrow cs-center cs-box_shadow slick-arrow"
-                  onClick={handlePre}
-                >
+                <div className="cs-right_arrow cs-center cs-box_shadow slick-arrow">
                   <svg
                     width={14}
                     height={15}

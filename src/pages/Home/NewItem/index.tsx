@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { Card } from "src/components/Card";
 import { MenuFilter } from "src/components/MenuFilter";
 const labelFilters = [
