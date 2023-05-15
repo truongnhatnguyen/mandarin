@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export function ConnectWallet() {
  return (
@@ -24,8 +25,10 @@ export function ConnectWallet() {
          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
          sint. Velit officia consequat duis enim velit mollit.
         </div>
-        <NavLink
-         to="/connect-wallet"
+        <button
+         onClick={() => {
+          toast.info("Coinbase Wallet Will Be Available Soon");
+         }}
          className="cs-iconbox_btn cs-primary_font"
         >
          Connect Wallet
@@ -41,7 +44,7 @@ export function ConnectWallet() {
            fill="currentColor"
           />
          </svg>
-        </NavLink>
+        </button>
        </div>
        <div className="cs-height_30 cs-height_lg_30" />
       </div>
@@ -54,8 +57,10 @@ export function ConnectWallet() {
          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
          sint. Velit officia consequat duis enim velit mollit.
         </div>
-        <NavLink
-         to="/connect-wallet"
+        <button
+         onClick={() => {
+          toast.info("Coinbase Wallet Will Be Available Soon");
+         }}
          className="cs-iconbox_btn cs-primary_font"
         >
          Connect Wallet
@@ -71,7 +76,7 @@ export function ConnectWallet() {
            fill="currentColor"
           />
          </svg>
-        </NavLink>
+        </button>
        </div>
        <div className="cs-height_30 cs-height_lg_30" />
       </div>
