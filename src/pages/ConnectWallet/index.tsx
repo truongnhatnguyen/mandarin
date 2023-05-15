@@ -1,7 +1,9 @@
-import { NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
+import { useMetaMask } from "../../core/WalletProvider";
+import { WalletId } from "../../core/WalletProvider/wallet-interface";
 
 export function ConnectWallet() {
+ const { connect } = useMetaMask();
  return (
   <>
    <div>
@@ -27,7 +29,7 @@ export function ConnectWallet() {
         </div>
         <button
          onClick={() => {
-          toast.info("Coinbase Wallet Will Be Available Soon");
+          connect(WalletId.Metamask);
          }}
          className="cs-iconbox_btn cs-primary_font"
         >
@@ -89,9 +91,11 @@ export function ConnectWallet() {
          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
          sint. Velit officia consequat duis enim velit mollit.
         </div>
-        <NavLink
-         to="/connect-wallet"
+        <button
          className="cs-iconbox_btn cs-primary_font"
+         onClick={() => {
+          connect(WalletId.Metamask);
+         }}
         >
          Connect Wallet
          <svg
@@ -106,7 +110,7 @@ export function ConnectWallet() {
            fill="currentColor"
           />
          </svg>
-        </NavLink>
+        </button>
        </div>
        <div className="cs-height_30 cs-height_lg_30" />
       </div>
