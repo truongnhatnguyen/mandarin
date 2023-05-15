@@ -23,6 +23,12 @@ export function BuyPresalePage() {
                     Atus and how we use it.{" "}
                   </P>{" "}
                   <P>
+                    At Atus, accessible from www.atus.network, one of our main
+                    priorities is visitor privacy. This Privacy Policy document
+                    contains the types of information collected and recorded by
+                    Atus and how we use it.{" "}
+                  </P>{" "}
+                  <P>
                     If you have further questions or require more information
                     about our Privacy Policy, please contact us.{" "}
                   </P>{" "}
@@ -40,7 +46,7 @@ export function BuyPresalePage() {
           </div>
           <div>
             <p className="text-center text-xl font-semibold">Buy Pre-sale </p>
-            <div className="mt-4 cs-white_bg rounded-lg  p-10 pt-6 pb-2 space-y-4">
+            <div className="mt-4 cs-white_bg rounded-2xl  p-10 pt-6 pb-2 space-y-4">
               <Form />
             </div>
           </div>
