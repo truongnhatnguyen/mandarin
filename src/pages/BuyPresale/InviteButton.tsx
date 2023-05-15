@@ -1,4 +1,4 @@
-import { faCopy, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMemo, useState } from "react";
 import { toast } from "react-toastify";
@@ -18,17 +18,9 @@ export function InviteButton() {
  };
  return (
   <>
-   <div
-    className="flex space-x-1 items-center cursor-pointer group"
-    onClick={handleClick}
-   >
-    <div className="bg-[#dbdbdb] rounded-full w-5 h-5 flex justify-center items-center">
-     <FontAwesomeIcon className="text-xs text-[#6a6a6a]" icon={faPlus} />
-    </div>
-    <span className="text-xs text-[#5f5f5f] group-hover:underline">
-     Invite your friends to join
-    </span>
-   </div>
+   <button className="px-5 py-3 bg-blue-300 rounded-md" onClick={handleClick}>
+    Create Referal
+   </button>
    {isDialog && <DialogInvite close={() => setIsDialog(false)} />}
   </>
  );

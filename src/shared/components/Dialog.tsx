@@ -28,14 +28,14 @@ export const Dialog: React.FC<Props> = ({
    onClick={handleClick}
   >
    <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-2 bg-contain  bg-no-repeat min-w-[350px]">
-    <div className="w-full bg-white  rounded  px-6 py-3   ">
+    <div className="w-full bg-[#080326]  rounded  px-6 py-3   ">
      <div className="relative">
       <button
-       className="absolute  -right-2 top-1/2 -translate-y-1/2"
+       className="absolute  -right-2 top-1/2 -translate-y-1/2 "
        title="Close"
        onClick={() => close()}
       >
-       <FontAwesomeIcon className="text-black text-lg" icon={faXmark} />
+       <FontAwesomeIcon className="text-white text-lg" icon={faXmark} />
       </button>
       {title && <p className="md:text-xl  font-bold pr-8 truncate">{title}</p>}
      </div>
