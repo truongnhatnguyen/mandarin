@@ -4,7 +4,7 @@ import { SwapIcon } from "./SwapIcon";
 
 export function Form() {
   return (
-    <div className=" flex flex-col space-y-1">
+    <div className=" flex flex-col space-y-3">
       <div className="text-center grid gap-4">
         <div className="bg-gray-400 rounded-full w-full h-5 relative">
           {" "}
@@ -14,6 +14,9 @@ export function Form() {
           </div>
         </div>
         <div>LISTING TIME: 20-7-2023</div>
+        <div className="w-full">
+          <img src="/assets/buypresale/header.png" alt="" className="w-full" />
+        </div>
       </div>
       <FromToken />
       <SwapIcon />

@@ -26,6 +26,10 @@ export function BuyPresalePage() {
                     If you have further questions or require more information
                     about our Privacy Policy, please contact us.{" "}
                   </P>{" "}
+                  <P>
+                    If you have further questions or require more information
+                    about our Privacy Policy, please contact us.{" "}
+                  </P>{" "}
                   <T>
                     What information do we collect Consent have further
                     questions or require more information
@@ -36,7 +40,7 @@ export function BuyPresalePage() {
           </div>
           <div>
             <p className="text-center text-xl font-semibold">Buy Pre-sale </p>
-            <div className="mt-4 cs-white_bg rounded-lg  px-6 pt-6 pb-2 space-y-4">
+            <div className="mt-4 cs-white_bg rounded-lg  p-10 pt-6 pb-2 space-y-4">
               <Form />
             </div>
           </div>
