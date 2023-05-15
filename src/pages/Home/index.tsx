@@ -26,6 +26,7 @@ export const HomePage = () => {
       <IconBoxes />
       <div className="cs-height_70 cs-height_lg_40"></div>
       <Cta />
+      <div className="cs-height_70 cs-height_lg_40"></div>
     </>
   );
 };

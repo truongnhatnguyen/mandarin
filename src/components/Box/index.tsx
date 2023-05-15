@@ -9,7 +9,7 @@ export function Box(
 ) {
   return (
     <div className="">
-      <div className="cs-iconbox cs-style1 cs-white_bg">
+      <div className="cs-iconbox cs-style1 cs-white_bg  h-full">
         <div className="cs-iconbox_icon">
           <img src={props.img} className="inline" alt="" />
         </div>
