@@ -526,8 +526,6 @@ export function Explore() {
   const { search } = useLocation();
   const category = new URLSearchParams(search).get("category");
 
-  console.log(category);
-
   useEffect(() => {
     if (category) {
       handleFilterClick(category);
