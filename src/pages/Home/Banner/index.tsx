@@ -73,7 +73,7 @@ export function Banner() {
       className="cs-hero cs-style4 cs-bg cs-center"
       data-src="assets/img/hero_bg4.jpeg"
     >
-      <div className="container-fluid">
+      <div className="sm:container">
         <div className="cs-hero_in">
           <div className="cs-hero_in_left">
             <div className="cs-hero_text">
