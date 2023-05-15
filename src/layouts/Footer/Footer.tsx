@@ -1,6 +1,6 @@
+import { NavLink } from "react-router-dom";
 import { Link } from "src/shared/components/Link";
 import "./Footer.css";
-import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (

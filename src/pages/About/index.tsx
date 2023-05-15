@@ -1,11 +1,10 @@
-import React from "react";
+import Marquee from "react-fast-marquee";
 import { NavLink } from "react-router-dom";
 import { Head } from "src/components/Head";
-import { SecitonVideo } from "./SectionVideo";
-import { CTA } from "./CTA";
 import { BoxIcon } from "./BoxIcon";
+import { CTA } from "./CTA";
+import { SecitonVideo } from "./SectionVideo";
 import { TeamMembers } from "./TeamMembers";
-import Marquee from "react-fast-marquee";
 
 export function About() {
   return (
@@ -26,6 +25,7 @@ export function About() {
           CtaTitle="On a mission to environmental
           sustainability with Blockchain"
           textLeft
+          href="/explore"
         ></CTA>
         {/* End CTA */}
         <div className="cs-height_95 cs-height_lg_70" />
@@ -46,6 +46,7 @@ export function About() {
           CtaTitle="Play, Sell Well and Collect your
           Best Games with us Very Fast"
           textLeft={false}
+          href="/connect-wallet"
         />
         {/* End CTA */}
         <div className="cs-height_95 cs-height_lg_70" />
@@ -54,7 +55,7 @@ export function About() {
         {/* End Team members */}
         <div className="cs-height_100 cs-height_lg_70" />
         {/* Start CTA */}
-        <div className="sm:container sm:mx-auto mx-5">
+        <div className="container-auto">
           <div className="cs-cta cs-style2 text-center cs-accent_bg">
             <h2 className="cs-cta_title cs-white_color_8">Buy Pre-sale Now</h2>
             <div className="cs-cta_subtitle cs-white_color_8">

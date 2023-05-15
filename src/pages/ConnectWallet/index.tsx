@@ -1,4 +1,6 @@
-import React from "react";
+import { toast } from "react-toastify";
+import { useMetaMask } from "../../core/WalletProvider";
+import { WalletId } from "../../core/WalletProvider/wallet-interface";
 import { NavLink } from "react-router-dom";
 
 export function ConnectWallet() {
