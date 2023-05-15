@@ -21,6 +21,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Sport",
+    id: "sport-1",
   },
   {
     LuotLike: "1.2K",
@@ -30,6 +31,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Sport",
+    id: "sport-2",
   },
   {
     LuotLike: "1.2K",
@@ -39,6 +41,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Sport",
+    id: "sport-3",
   },
   {
     LuotLike: "1.2K",
@@ -48,6 +51,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Sport",
+    id: "sport-4",
   },
   {
     LuotLike: "1.2K",
@@ -57,6 +61,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Sport",
+    id: "sport-5",
   },
   {
     LuotLike: "1.2K",
@@ -66,6 +71,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Simulation",
+    id: "simulation-1",
   },
   {
     LuotLike: "1.2K",
@@ -75,6 +81,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Simulation",
+    id: "simulation-2",
   },
   {
     LuotLike: "1.2K",
@@ -84,6 +91,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Simulation",
+    id: "simulation-3",
   },
   {
     LuotLike: "1.2K",
@@ -93,6 +101,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Simulation",
+    id: "simulation-4",
   },
   {
     LuotLike: "1.2K",
@@ -102,6 +111,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Simulation",
+    id: "simulation-5",
   },
   {
     LuotLike: "1.2K",
@@ -111,6 +121,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Strategy",
+    id: "strategy-1",
   },
   {
     LuotLike: "1.2K",
@@ -120,6 +131,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Strategy",
+    id: "strategy-2",
   },
   {
     LuotLike: "1.2K",
@@ -129,6 +141,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Strategy",
+    id: "strategy-3",
   },
   {
     LuotLike: "1.2K",
@@ -138,6 +151,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Strategy",
+    id: "strategy-4",
   },
   {
     LuotLike: "1.2K",
@@ -147,33 +161,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Strategy",
-  },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar4.png",
-    avatarInfo: "assets/exploredetails/avatar-similar3.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-    category: "Sport",
-  },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar3.png",
-    avatarInfo: "assets/exploredetails/avatar-similar2.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-    category: "Sport",
-  },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar2.png",
-    avatarInfo: "assets/exploredetails/avatar-similar1.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-    category: "Sport",
+    id: "strategy-5",
   },
   {
     LuotLike: "1.2K",
@@ -183,6 +171,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Action",
+    id: "action-1",
   },
   {
     LuotLike: "1.2K",
@@ -192,6 +181,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Action",
+    id: "action-2",
   },
   {
     LuotLike: "1.2K",
@@ -201,6 +191,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Role-Playing",
+    id: "rolePlaying-1",
   },
   {
     LuotLike: "1.2K",
@@ -210,6 +201,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Role-Playing",
+    id: "rolePlaying-2",
   },
   {
     LuotLike: "1.2K",
@@ -219,16 +211,9 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Role-Playing",
+    id: "rolePlaying-3",
   },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar1.png",
-    avatarInfo: "assets/exploredetails/avatar-similar.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-    category: "Sport",
-  },
+
   {
     LuotLike: "1.2K",
     img: "assets/exploredetails/similar.png",
@@ -237,15 +222,7 @@ const dataCards = [
     price: "0.29 --DR",
     title: "Kawaii-bubble-tea",
     category: "Survival",
-  },
-  {
-    LuotLike: "1.2K",
-    img: "assets/exploredetails/similar.png",
-    avatarInfo: "assets/exploredetails/avatar-similar.png",
-    info: "austin R.",
-    price: "0.29 --DR",
-    title: "Kawaii-bubble-tea",
-    category: "Sport",
+    id: "survival-1",
   },
 ];
 
@@ -257,6 +234,7 @@ interface DataCards {
   price: string;
   title: string;
   category: string;
+  id: string;
 }
 
 export function NewItem() {
@@ -281,66 +259,12 @@ export function NewItem() {
   // const productsToShow = tmpDatas.slice(0, page * 10);
   return (
     <section>
-      <div className="sm:container sm:mx-auto mx-5">
+      <div className="sm:container sm:mx-auto mx-5 mt-10 sm:mt-0">
         <div className="cs-section_heading cs-style2">
-          <div className="cs-section_left">
+          <div className="cs-section_left sm:block hidden">
             <h2 className="cs-section_title">New Items</h2>
           </div>
-          <div className="cs-section_right">
-            <NavLink to="/explore" className="cs-btn cs-style1">
-              <span>Explore More</span>
-            </NavLink>
-          </div>
         </div>
-        {/* <div className="cs-isotop_filter cs-style1 cs-type1 cs-center">
-          <ul className="cs-mp0 cs-center">
-            <li className={activeFilter === "*" ? "active" : ""}>
-              <NavLink
-                to="#"
-                data-filter="*"
-                onClick={() => handleFilterClick("*")}
-              >
-                <span>All NFT</span>
-              </NavLink>
-            </li>
-            <li className={activeFilter === ".fashion" ? "active" : ""}>
-              <NavLink
-                to="#"
-                data-filter=".fashion"
-                onClick={() => handleFilterClick(".fashion")}
-              >
-                <span>Fashion</span>
-              </NavLink>
-            </li>
-            <li className={activeFilter === ".music" ? "active" : ""}>
-              <NavLink
-                to="#"
-                data-filter=".music"
-                onClick={() => handleFilterClick(".music")}
-              >
-                <span>Music</span>
-              </NavLink>
-            </li>
-            <li className={activeFilter === ".video" ? "active" : ""}>
-              <NavLink
-                to="#"
-                data-filter=".video"
-                onClick={() => handleFilterClick(".video")}
-              >
-                <span>Video</span>
-              </NavLink>
-            </li>
-            <li className={activeFilter === ".games" ? "active" : ""}>
-              <NavLink
-                to="#"
-                data-filter=".games"
-                onClick={() => handleFilterClick(".games")}
-              >
-                <span>Games</span>
-              </NavLink>
-            </li>
-          </ul>
-        </div> */}
         <MenuFilter
           activeFilter={activeFilter}
           lstLabels={labelFilters}
@@ -351,6 +275,7 @@ export function NewItem() {
           {tmpDatas.map((data, idx) => (
             <Card
               key={idx}
+              id={data.id}
               LuotLike={data.LuotLike}
               img={data.img}
               avatarInfo={data.avatarInfo}

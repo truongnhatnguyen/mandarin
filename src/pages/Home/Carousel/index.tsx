@@ -6,7 +6,7 @@ export function Carousel() {
     <section>
       <div className="container mx-auto">
         <h2 className="cs-section_heading cs-style1 text-center">
-          The world's no.1 NFT platform for thousands of brands
+          Solid game supply platform with potentital partenrs
         </h2>
         <div className="cs-height_45 cs-height_lg_45" />
       </div>

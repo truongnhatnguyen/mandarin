@@ -71,7 +71,7 @@ export function Collections() {
   return (
     <div>
       <section>
-        <div className="container mx-auto">
+        <div className="sm:container sm:mx-auto mx-5">
           <div className="cs-section_heading cs-style1 text-center">
             <h2 className="cs-section_title">Top Developers</h2>
           </div>

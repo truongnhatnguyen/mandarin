@@ -6,12 +6,10 @@ import { TopSeller } from "./TopSeller";
 import { Carousel } from "./Carousel";
 import { IconBoxes } from "./IconBoxes";
 import { Cta } from "./Cta";
-import { Preloader } from "src/components/Preloader";
 
 export const HomePage = () => {
   return (
     <>
-      <Preloader />
       <div className="cs-height_90 cs-height_lg_80"></div>
       <Banner />
       <div className="cs-height_95 cs-height_lg_70"></div>

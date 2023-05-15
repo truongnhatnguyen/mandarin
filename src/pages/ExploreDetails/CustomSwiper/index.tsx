@@ -9,7 +9,11 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs } from "swiper";
 
-export function CustomSwiper() {
+export function CustomSwiper(
+  props: React.PropsWithChildren & {
+    imgs: string[];
+  }
+) {
   const [thumbsSwiper, setThumbsSwiper] = useState<any | null>(null);
   return (
     <>
@@ -22,76 +26,21 @@ export function CustomSwiper() {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2 rounded-md mb-4 w-full h-96"
       >
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide1.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide2.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide3.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide1.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide2.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide3.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide1.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide2.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide3.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide1.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
+        {props.imgs.map((item, idx) => (
+          <SwiperSlide key={idx}>
+            {item.endsWith(".webm") ? (
+              <video autoPlay controls poster={item} className="w-full h-full">
+                <source
+                  src={item}
+                  type="video/webm"
+                  className="w-full h-full"
+                />
+              </video>
+            ) : (
+              <img src={item} alt="" className="w-full h-full" />
+            )}
+          </SwiperSlide>
+        ))}
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
@@ -103,76 +52,21 @@ export function CustomSwiper() {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper rounded-md"
       >
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide1.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide2.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide3.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide1.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide2.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide3.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide1.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide2.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide3.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="assets/exploredetails/SwiperSlide1.png"
-            alt=""
-            className="w-full h-full"
-          />
-        </SwiperSlide>
+        {props.imgs.map((item, idx) => (
+          <SwiperSlide key={idx}>
+            {item.endsWith(".webm") ? (
+              <video controls poster={item} className="w-full h-full">
+                <source
+                  src={item}
+                  type="video/webm"
+                  className="w-full h-full"
+                />
+              </video>
+            ) : (
+              <img src={item} alt="" className="w-full h-full" />
+            )}
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

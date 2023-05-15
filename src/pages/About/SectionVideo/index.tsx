@@ -4,7 +4,7 @@ export function SecitonVideo() {
   return (
     <div className="container-auto">
       <h2 className="cs-section_heading cs-style1 text-center">
-        NFT Gen marketplace with everything for everyone
+        Games Market with Everything for Everyone
       </h2>
       <div className="cs-height_45 cs-height_lg_45" />
       <div className="row">

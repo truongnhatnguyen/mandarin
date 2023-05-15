@@ -38,10 +38,10 @@ function App() {
         >
           <Route index element={<HomePage />} />
           <Route path="how-it-works" element={<HowItWorks />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="contract" element={<Contact />} />
           <Route path="about" element={<About />} />
           <Route path="connect-wallet" element={<ConnectWallet />} />
-          <Route path="explore-details" element={<ExploreDetails />} />
+          <Route path="explore-details/:id" element={<ExploreDetails />} />
           <Route path="explore" element={<Explore />} />
           <Route path="privacy" element={<PrivacyPage />} />
           <Route path="presale" element={<BuyPresalePage />} />

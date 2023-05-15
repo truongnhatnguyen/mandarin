@@ -19,7 +19,7 @@ const datas = [
 export function Catagory() {
   return (
     <section>
-      <div className="container mx-auto">
+      <div className="sm:container sm:mx-auto mx-5">
         <h2 className="cs-section_heading cs-style1 text-center">
           Explore By Catagory
         </h2>
