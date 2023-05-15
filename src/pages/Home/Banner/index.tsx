@@ -103,62 +103,6 @@ export function Banner() {
           </div>
           <div className="cs-hero_in_right ">
             <div className="cs-slider cs-style1">
-              {/* <div
-                className="cs-slider_container"
-                data-autoplay={0}
-                data-loop={1}
-                data-speed={600}
-                data-center={1}
-                data-slides-per-view="responsive"
-                data-xs-slides={1}
-                data-sm-slides={3}
-                data-md-slides={3}
-                data-lg-slides={3}
-                data-add-slides={3}
-              >
-                <div className="cs-slider_wrapper slick-initialized slick-slider slick-dotted">
-                  <div className="slick-list draggable !p-0">
-                    <div
-                      className="slick-track flex"
-                      style={{
-                        opacity: 1,
-                        width: 3888,
-                        transform: `!translate3d(-${
-                          true ? "1215px" : ""
-                        }, 0, 0)`,
-                      }}
-                    >
-                      {dataCards.map((data, idx) => (
-                        <div
-                          className={`${
-                            idx === 1
-                              ? " slick-slide slick-current slick-active slick-center"
-                              : "slick-slide slick-cloned "
-                          }`}
-                          aria-hidden="true"
-                          id=""
-                          data-slick-index={-idx + 1}
-                          style={{ width: 243 }}
-                        >
-                          <div>
-                            <div className="cs-slide !w-full !inline-block">
-                              <Card
-                                key={idx}
-                                LuotLike={data.LuotLike}
-                                img={data.img}
-                                avatarInfo={data.avatarInfo}
-                                info={data.info}
-                                price={data.price}
-                                title={data.title}
-                              ></Card>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div> */}
               <Slider3d dataCards={dataCards} />
               <div className="cs-slider_arrows cs-style1 cs-center cs-hidden_mobile">
                 <div className="cs-left_arrow cs-center cs-box_shadow slick-arrow">
