@@ -20,7 +20,6 @@ export function Cta() {
           </div>
         </div>
       </section>
-      ;
     </div>
   );
 }

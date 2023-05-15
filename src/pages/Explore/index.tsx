@@ -559,21 +559,6 @@ export function Explore() {
           </div>
           <div className="cs-height_30 cs-height_lg_30" />
           <div className="cs-filter_head">
-            <div className="cs-filter_head_left">
-              <span className="cs-search_result cs-medium cs-ternary_color">
-                29064886 Results
-              </span>
-              <div className="cs-form_field_wrap">
-                <input
-                  type="text"
-                  className="cs-form_field cs-field_sm"
-                  placeholder="In Auction"
-                />
-              </div>
-              <NavLink to="#" className="cs-clear_btn">
-                Clear All
-              </NavLink>
-            </div>
             <div className="cs-filter_head_right">
               <div className="cs-form_field_wrap cs-select_arrow">
                 <select className="cs-form_field cs-field_sm">
@@ -581,14 +566,6 @@ export function Explore() {
                   <option value={22}>Last 7 days</option>
                   <option value={33}>Last 30 days</option>
                   <option value={44}>All time</option>
-                </select>
-              </div>
-              <div className="cs-form_field_wrap cs-select_arrow">
-                <select className="cs-form_field cs-field_sm">
-                  <option value={1}>Likes</option>
-                  <option value={2}>Most popular</option>
-                  <option value={3}>By price</option>
-                  <option value={4}>By published</option>
                 </select>
               </div>
             </div>
