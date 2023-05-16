@@ -6,90 +6,49 @@ export function PrivacyPage() {
       <div>
         <div className="cs-height_100 cs-height_lg_70" />
         <div className="container-auto py-12">
-          <T>Privacy Policy for Atus</T>{" "}
+          <T>Privacy Policy</T>{" "}
           <P>
-            At Atus, accessible from www.atus.network, one of our main
-            priorities is visitor privacy. This Privacy Policy document contains
-            the types of information collected and recorded by Atus and how we
-            use it.{" "}
+            At Mandarin, we are committed to protecting your privacy and
+            personal information. This Privacy Policy describes how we collect,
+            use, and disclose your information when you use our website to
+            purchase games using DRI tokens.{" "}
           </P>{" "}
+          <T>Information We Collect</T>{" "}
           <P>
-            If you have further questions or require more information about our
-            Privacy Policy, please contact us.{" "}
+            We collect information that you provide to us when you register for
+            an account, purchase games, or interact with our website. This
+            information may include your name, email address, physical address,
+            and DRI token wallet address. We also collect information about your
+            transactions, including the games you purchase and the amount of DRI
+            tokens used.{" "}
           </P>{" "}
+          <T>How We Use Your Information</T>{" "}
           <P>
-            This Privacy Policy applies only to our online activities and is
-            valid for our website visitors in relation to the information they
-            have shared and/or collected in the community. This policy does not
-            apply to any information collected offline or through channels other
-            than this website.{" "}
+            We use your information to process your transactions, provide
+            customer support, and improve our website and services. We may also
+            use your information to send you marketing communications about our
+            products and services, but you can opt-out of these communications
+            at any time.{" "}
           </P>
-          <T>Consent</T>{" "}
+          <T>How We Share Your Information </T>{" "}
           <P>
-            By using our website, you agree to our Privacy Policy and agree to
-            its terms.{" "}
-          </P>
-          <T>What information do we collect</T>{" "}
-          <P>
-            The personal information you are asked to provide and the reasons
-            why you are asked to provide it will be made clear to you at the
-            time we ask you to provide your personal information.{" "}
+            We do not share your information with third parties for their
+            marketing purposes. We may share your information with our service
+            providers who assist us in processing transactions and providing
+            customer support. We may also disclose your information if required
+            by law or to protect our legal rights{" "}
           </P>{" "}
+          <T>Security of Your Information</T>{" "}
           <P>
-            If you contact us directly, we may receive additional information
-            about you such as your name, email address, phone number, message
-            body and/or attachments that you may send to us and any other
-            information you may choose to provide.{" "}
+            We take reasonable measures to protect your information from
+            unauthorized access, use, or disclosure. We use industry-standard
+            encryption to secure your transactions and personal information{" "}
           </P>
-          <T>How we use the information we collect</T>{" "}
+          <T>Changes to this Privacy Policy </T>{" "}
           <P>
-            Our primary purpose for collecting information is to help us
-            operate, provide, improve, customize, support, and market our
-            Services.{" "}
-          </P>
-          <P>We may use your information to:</P>{" "}
-          <P>
-            Atus follows the standard procedure of using log files. These files
-            record visitors when they visit the website. All hosting companies
-            do this and are part of the hosting analysis. The information
-            collected by the log file includes internet protocol (IP) addresses,
-            Internet Service Providers (ISP), date and time stamps,
-            referring/exit pages, and possibly clicks. They are not linked to
-            any personally identifiable information. The purpose of the
-            information is to analyze trends, administer the website, track user
-            movements on the site, and collect demographic information.{" "}
-          </P>
-          <T>Data that we collect when you use our services</T>{" "}
-          <T>Third Party Privacy Policies</T>{" "}
-          <P>
-            Atus's Privacy Policy does not apply to other advertisers or
-            websites. We therefore recommend that you refer to the respective
-            Privacy Policy of these third-party ad servers for more detailed
-            information. It may include their practices and instructions on how
-            to opt out of certain options.{" "}
-          </P>{" "}
-          <P>
-            You can choose to disable cookies through your personal browser
-            preferences. For more detailed information on cookie management with
-            specific web browsers, you can find this information at your
-            browser's respective web pages.{" "}
-          </P>
-          <T>How we update our Policy</T>{" "}
-          <P>
-            We reserve the right to update this Policy online from time to time,
-            and the new policy will immediately replace the old one once posted.
-            We will notify you of material changes to this policy by updating
-            the last updated date at the top of this page.{" "}
-          </P>{" "}
-          <P>
-            In particular, if you do not accept the revised policies, please
-            stop using the Service immediately{" "}
-          </P>{" "}
-          <P>
-            Your continued use of our Services confirms your acceptance of our
-            Privacy Policy, as amended. If you do not agree with our Privacy
-            Policy, as amended, you must stop using our Services. We recommend
-            that you visit this page regularly to check for changes.{" "}
+            We may update this Privacy Policy from time to time. Any changes
+            will be posted on our website, and you should review the Privacy
+            Policy periodically.{" "}
           </P>
         </div>
 

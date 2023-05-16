@@ -32,7 +32,7 @@ const Clock: React.FC = () => {
 
   return (
     <div>
-      <div className="flex w-full justify-around">
+      <div className="flex w-full justify-around items-center">
         <div>
           <div className="font-bold text-3xl">{day}</div>
           <p>Days</p>
