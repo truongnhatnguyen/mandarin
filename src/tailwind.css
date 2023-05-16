@@ -4,7 +4,7 @@
 
 @layer components {
  .container-auto {
-  @apply container px-4 mx-auto max-w-[1024px];
+  @apply container px-4 mx-auto;
  }
  html {
   @apply text-[14px] md:text-[16px];

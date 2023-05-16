@@ -8,15 +8,15 @@ import "./index.css";
 
 import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
+ document.getElementById("root") as HTMLElement
 );
 loadEnv().then(() => {
-  root.render(
-    <Router>
-      <ScrollToTop />
-      <App />
-    </Router>
-  );
+ root.render(
+  <Router>
+   <ScrollToTop />
+   <App />
+  </Router>
+ );
 });
 
 // If you want to start measuring performance in your app, pass a function
