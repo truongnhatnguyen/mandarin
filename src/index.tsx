@@ -5,6 +5,7 @@ import { loadEnv } from "./environment";
 import "./fonts";
 import ScrollToTop from "./helpers/ScrollToTop";
 import "./index.css";
+
 import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(
  document.getElementById("root") as HTMLElement

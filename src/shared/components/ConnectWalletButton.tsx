@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { NavLink } from "react-router-dom";
 import metamaskicon from "../../assets/metamaskicon.png";
 import trustwalleticon from "../../assets/trustwalleticon.png";
 import wallet from "../../assets/wallet.png";
@@ -39,11 +40,11 @@ export const BaseConnectWalletButton = (
  );
 };
 export const ConnectWalletButton = () => {
- const { status } = useMetaMask();
-
- if (status === "connected") return <ConnectedWalletButton />;
-
- return <BaseConnectWalletButton />;
+ return (
+  <NavLink to="/connect-wallet" className="cs-btn cs-style1">
+   <span>Connect Wallet</span>
+  </NavLink>
+ );
 };
 
 export const ConnectedWalletButton = () => {

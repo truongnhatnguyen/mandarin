@@ -5,9 +5,9 @@ export function ToToken() {
  const { toValue, setToValue, balanceToken: balance } = useBuyPresale();
  return (
   <FormItem
-   title="Into"
-   tokenName="Atus"
-   token="ATU"
+   title="Receive in DRI"
+   tokenName="DRI"
+   token="DRI"
    balance={balance}
    value={toValue}
    onChange={setToValue}
