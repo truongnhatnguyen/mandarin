@@ -1,10 +1,62 @@
 import { NavLink } from "react-router-dom";
 import { Link } from "src/shared/components/Link";
 import "./Footer.css";
+import { useMemo, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import { ENV } from "src/environment";
+import { ButtonColorEnum } from "src/shared/components/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWarning } from "@fortawesome/free-solid-svg-icons";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const validateEmail = (email: string) => {
+    return Boolean(
+      email
+        .toLowerCase()
+        .match(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        )
+    );
+  };
+
+  const isValidEmail = useMemo(() => {
+    if (!email) {
+      return false;
+    }
+    return validateEmail(email);
+  }, [email]);
+
+  const handleClickSignUp = () => {
+    if (isValidEmail) {
+      toast.success(ENV.getUpdateMessage, {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
   return (
     <footer className="cs-footer cs-style1">
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <div className="cs-footer_bg" />
       <div className="cs-height_100 cs-height_lg_60" />
       <div className="sm:container sm:mx-auto mx-5">
@@ -103,8 +155,23 @@ export const Footer = () => {
                   type="text"
                   placeholder="Enter Your Email"
                   className="cs-newsletter_input"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
-                <button className="cs-newsletter_btn">
+                <div className="absolute top-1/2 right-14 -translate-y-1/2">
+                  {Boolean(email.length) && !isValidEmail && (
+                    <FontAwesomeIcon
+                      className="animate-pulse text-orange-600 text-xl"
+                      icon={faWarning}
+                    />
+                  )}
+                </div>
+                <button
+                  className="cs-newsletter_btn !rounded"
+                  color={ButtonColorEnum.Primary}
+                  onClick={handleClickSignUp}
+                  disabled={!isValidEmail}
+                >
                   <svg
                     width={25}
                     height={16}
