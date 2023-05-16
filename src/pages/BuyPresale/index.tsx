@@ -9,36 +9,38 @@ export function BuyPresalePage() {
     <>
       <Preloader></Preloader>
       <div className="cs-height_70 cs-height_lg_40"></div>
-      <div className="py-24 container-auto">
-        <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
+      <div className="py-24 sm:container sm:mx-auto md:container-auto mx-5">
+        <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 grid-cols-1 gap-4  h-full">
           <div className="">
             <div className="row">
               <div className="col-lg-8 offset-lg-2">
                 <div className="cs-single_post">
-                  <T>Privacy Policy for Atus</T>{" "}
+                  <T>
+                    Welcome to Mandarin, the leading online platform for
+                    purchasing games with DRI tokens!
+                  </T>{" "}
                   <P>
-                    At Atus, accessible from www.atus.network, one of our main
-                    priorities is visitor privacy. This Privacy Policy document
-                    contains the types of information collected and recorded by
-                    Atus and how we use it.{" "}
+                    Our website offers a wide range of gaming titles for various
+                    platforms, including PC, game consoles, and mobile devices.{" "}
                   </P>{" "}
                   <P>
-                    At Atus, accessible from www.atus.network, one of our main
-                    priorities is visitor privacy. This Privacy Policy document
-                    contains the types of information collected and recorded by
-                    Atus and how we use it.{" "}
+                    With DRI tokens, you can easily and securely buy the games
+                    you want, while taking advantage of the benefits of using
+                    blockchain technology.{" "}
                   </P>{" "}
                   <P>
-                    If you have further questions or require more information
-                    about our Privacy Policy, please contact us.{" "}
+                    Our website features a user-friendly interface that allows
+                    you to easily browse and search for the games you're
+                    interested in, while ensuring that your transactions are
+                    safe and your personal information is secure.{" "}
                   </P>{" "}
                   <P>
-                    If you have further questions or require more information
-                    about our Privacy Policy, please contact us.{" "}
+                    At Mandarin, we prioritize customer satisfaction and strive
+                    to provide you with the best possible gaming experience.{" "}
                   </P>{" "}
                   <T>
-                    What information do we collect Consent have further
-                    questions or require more information
+                    come and discover the benefits of purchasing games with DRI
+                    tokens on Mandarin today!
                   </T>{" "}
                 </div>
               </div>

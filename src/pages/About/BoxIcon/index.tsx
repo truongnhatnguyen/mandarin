@@ -8,24 +8,24 @@ const dataBox = [
     subTitle: "Games",
   },
   {
-    img: "assets/about/icon-game.png",
+    img: "assets/about/icon-transactions.png",
     title: "5M+",
     subTitle: "transactions",
   },
   {
-    img: "assets/about/icon-game.png",
+    img: "assets/about/icon-valuation.png",
     title: "85%",
     subTitle: "valuation ",
   },
   {
-    img: "assets/about/icon-game.png",
+    img: "assets/about/icon-total.png",
     title: "500M+",
     subTitle: "Total Volume ",
   },
   {
-    img: "assets/about/icon-game.png",
+    img: "assets/about/icon-daily.png",
     title: "70K+",
-    subTitle: " Transactions",
+    subTitle: "daily transactions",
   },
 ];
 

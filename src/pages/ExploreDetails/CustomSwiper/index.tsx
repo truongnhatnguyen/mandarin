@@ -29,7 +29,7 @@ export function CustomSwiper(
         {props.imgs.map((item, idx) => (
           <SwiperSlide key={idx}>
             {item.endsWith(".webm") ? (
-              <video autoPlay controls poster={item} className="w-full h-full">
+              <video controls poster={item} className="w-full h-full">
                 <source
                   src={item}
                   type="video/webm"
@@ -50,7 +50,7 @@ export function CustomSwiper(
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper rounded-md"
+        className="mySwiper rounded-md h-44 "
       >
         {props.imgs.map((item, idx) => (
           <SwiperSlide key={idx}>

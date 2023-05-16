@@ -1,49 +1,33 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Form } from "./Form";
+import { Head } from "src/components/Head";
 
 export function Contact() {
   return (
     <>
       <div className="cs-height_90 cs-height_lg_80"></div>
       {/* Start Page Head */}
-      <section
-        className="cs-page_head cs-bg"
-        data-src="assets/img/page_head_bg.svg"
-      >
-        <div className="container-auto">
-          <div className="text-center">
-            <h1 className="cs-page_title">Contact</h1>
-            <ol className="breadcrumb">
-              <li className="breadcrumb-item">
-                <NavLink to="index.html">Home</NavLink>
-              </li>
-              <li className="breadcrumb-item active">Library</li>
-            </ol>
-          </div>
-        </div>
-      </section>
+      <Head title="Contact" />
       {/* End Page Head */}
       <div className="cs-height_100 cs-height_lg_70" />
-      <div className="container-auto">
+      <div className="sm:container sm:mx-auto mx-5">
         <div className="flex flex-row">
           <div className="lg:col-span-8 mx-auto">
             <div className="cs-contact_card_wrap">
-              <div className="cs-contact_card">
+              <div className="cs-contact_card items-center">
                 <div className="cs-contact_info text-center ">
                   <div className="cs-contact_icon ">
                     <svg
-                      width={39}
-                      height={39}
-                      viewBox="0 0 39 39"
-                      fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
                     >
-                      <g clipPath="url(#clip0_1448_14685)">
-                        <path
-                          d="M16.7113 22.6393C20.4669 26.4044 24.8179 29.9986 26.5422 28.2759C29.0074 25.8059 30.5274 23.6637 35.9646 28.0305C41.4018 32.3974 37.2249 35.3107 34.8373 37.6984C32.0823 40.4534 21.8128 37.8424 11.6573 27.6917C1.50177 17.5409 -1.10439 7.26986 1.65061 4.51169C4.04461 2.12878 6.95002 -2.04172 11.3169 3.38594C15.6837 8.81361 13.5383 10.3368 11.0746 12.8004C9.35194 14.5326 12.9461 18.882 16.7113 22.6393Z"
-                          fill="url(#paint0_linear_1448_14685)"
-                        />
-                      </g>
+                      {" "}
+                      <path
+                        d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"
+                        fill="url(#paint0_linear_1448_14685)"
+                      />{" "}
                       <defs>
                         <linearGradient
                           id="paint0_linear_1448_14685"
@@ -67,14 +51,14 @@ export function Contact() {
                       </defs>
                     </svg>
                   </div>
-                  <h3 className="cs-contact_title">Phone</h3>
-                  <p className="cs-contact_text">+7 (903) 679-96-15</p>
+                  <h3 className="cs-contact_title">Telegram</h3>
+                  <p className="cs-contact_text">@Mandarinpowered</p>
                 </div>
                 <div className="cs-contact_info text-center">
                   <div className="cs-contact_icon">
                     <svg
-                      width={40}
-                      height={39}
+                      width={36}
+                      height={34}
                       viewBox="0 0 40 39"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -99,38 +83,42 @@ export function Contact() {
                     </svg>
                   </div>
                   <h3 className="cs-contact_title">Email</h3>
-                  <p className="cs-contact_text">kenzi.law@example.com</p>
+                  <p className="cs-contact_text">
+                    mandarinpowered.io@gmail.com
+                  </p>
                 </div>
                 <div className="cs-contact_info text-center">
                   <div className="cs-contact_icon">
                     <svg
-                      width={41}
-                      height={39}
-                      viewBox="0 0 41 39"
-                      fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      width="31"
+                      height="31"
+                      fill="currentColor"
+                      className="bi bi-twitter"
+                      viewBox="0 0 16 16"
                     >
-                      <path
-                        d="M20.5552 0.543945C29.1928 0.543945 36.1943 7.54547 36.1943 16.1831C36.1943 22.7916 31.5507 29.9937 22.3837 37.8662C21.874 38.304 21.2241 38.5445 20.5522 38.5439C19.8802 38.5434 19.2307 38.3017 18.7218 37.863L18.1155 37.3368C9.35433 29.6697 4.91602 22.6441 4.91602 16.1831C4.91602 7.54547 11.9175 0.543945 20.5552 0.543945ZM20.5552 10.168C18.9599 10.168 17.4299 10.8018 16.3019 11.9298C15.1738 13.0578 14.5401 14.5878 14.5401 16.1831C14.5401 17.7784 15.1738 19.3083 16.3019 20.4364C17.4299 21.5644 18.9599 22.1982 20.5552 22.1982C22.1505 22.1982 23.6804 21.5644 24.8085 20.4364C25.9365 19.3083 26.5702 17.7784 26.5702 16.1831C26.5702 14.5878 25.9365 13.0578 24.8085 11.9298C23.6804 10.8018 22.1505 10.168 20.5552 10.168Z"
-                        fill="url(#paint0_linear_1448_14701)"
-                      />
+                      {" "}
                       <defs>
                         <linearGradient
-                          id="paint0_linear_1448_14701"
-                          x1="4.91602"
-                          y1="0.543945"
-                          x2="45.0587"
-                          y2="17.2727"
+                          id="paint0_linear_1448_14689"
+                          x1="4.16211"
+                          y1="3.89258"
+                          x2="40.3952"
+                          y2="24.2752"
                           gradientUnits="userSpaceOnUse"
                         >
                           <stop offset={0} stopColor="#FC466B" />
                           <stop offset={1} stopColor="#3F5EFB" />
                         </linearGradient>
                       </defs>
+                      <path
+                        fill="url(#paint0_linear_1448_14689)"
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                      />{" "}
                     </svg>
                   </div>
-                  <h3 className="cs-contact_title">Location</h3>
-                  <p className="cs-contact_text">2118 Thornridge Cir, 35624</p>
+                  <h3 className="cs-contact_title">Twitter</h3>
+                  <p className="cs-contact_text">@Mandarinpowered</p>
                 </div>
               </div>
             </div>
@@ -143,57 +131,7 @@ export function Contact() {
                 </p>
               </div>
               <div className="cs-height_45 cs-height_lg_45" />
-              <form className="cs-contact_form">
-                <div className="">
-                  <div>
-                    <div className="cs-form_field_wrap">
-                      <input
-                        type="text"
-                        className="cs-form_field"
-                        placeholder="Full Name"
-                      />
-                    </div>
-                    <div className="cs-height_20 cs-height_lg_20" />
-                  </div>
-                  <div>
-                    <div className="cs-form_field_wrap">
-                      <input
-                        type="text"
-                        className="cs-form_field"
-                        placeholder="Your Email"
-                      />
-                    </div>
-                    <div className="cs-height_20 cs-height_lg_20" />
-                  </div>
-                  <div>
-                    <div className="cs-form_field_wrap">
-                      <input
-                        type="text"
-                        className="cs-form_field"
-                        placeholder="Wright Subject"
-                      />
-                    </div>
-                    <div className="cs-height_20 cs-height_lg_20" />
-                  </div>
-                  <div>
-                    <div className="cs-form_field_wrap">
-                      <textarea
-                        cols={30}
-                        rows={5}
-                        placeholder="Message..."
-                        className="cs-form_field"
-                        defaultValue={""}
-                      />
-                    </div>
-                    <div className="cs-height_20 cs-height_lg_20" />
-                  </div>
-                  <div>
-                    <button className="cs-btn cs-style1 cs-btn_lg">
-                      <span>Send Message</span>
-                    </button>
-                  </div>
-                </div>
-              </form>
+              <Form />
             </div>
           </div>
         </div>

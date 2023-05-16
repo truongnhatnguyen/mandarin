@@ -14,10 +14,11 @@ export function Head(
       <div className="container-auto">
         <div className="text-center">
           <h1 className="cs-page_title">{props.title}</h1>
-          <ol className="breadcrumb">
+          <ol className="breadcrumb flex">
             <li className="breadcrumb-item">
               <NavLink to="/">Home</NavLink>
             </li>
+            &nbsp; / &nbsp;{" "}
             <li className="breadcrumb-item active">{props.title}</li>
           </ol>
         </div>
