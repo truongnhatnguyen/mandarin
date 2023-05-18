@@ -1,60 +1,65 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useMemo, useState } from "react";
+import { ENV } from "../../../environment";
 
-const Clock: React.FC = () => {
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-
-  const getFormattedTime = (value: number) => {
-    return value < 10 ? `0${value}` : value.toString();
-  };
-
-  const getTimeInVietnam = () => {
-    const vietnamTime = new Date().toLocaleString("en-US", {
-      timeZone: "Asia/Ho_Chi_Minh",
-    });
-    return new Date(vietnamTime);
-  };
-
-  const vietnamTime = getTimeInVietnam();
-  const day = getFormattedTime(vietnamTime.getDate());
-  const hour = getFormattedTime(vietnamTime.getHours());
-  const minute = getFormattedTime(vietnamTime.getMinutes());
-  const second = getFormattedTime(vietnamTime.getSeconds());
-
-  return (
-    <div>
-      <div className="flex w-full justify-around items-center">
-        <div>
-          <div className="font-bold text-3xl">{day}</div>
-          <p>Days</p>
-        </div>
-        <div>:</div>
-        <div>
-          <div className="font-bold text-3xl">{hour}</div>
-          <p>Hour</p>
-        </div>
-        <div>:</div>
-        <div>
-          <div className="font-bold text-3xl">{minute}</div>
-          <p>Minute</p>
-        </div>
-        <div>:</div>
-        <div>
-          <div className="font-bold text-3xl">{second}</div>
-          <p>Second</p>
-        </div>
-      </div>
-    </div>
+export const Clock: React.FC = () => {
+ const [value, setValue] = useState<(number | null)[]>([
+  null,
+  null,
+  null,
+  null,
+ ]);
+ useEffect(() => {
+  const date = new Date(
+   ENV.countdown.year,
+   ENV.countdown.month - 1,
+   ENV.countdown.day,
+   ENV.countdown.hour,
+   ENV.countdown.minute,
+   0
   );
+  let interval: any;
+  if (date.getTime() > Date.now()) {
+   interval = setInterval(() => {
+    let distance = date.getTime() - Date.now(),
+     days = Math.floor(distance / (1000 * 60 * 60 * 24)),
+     hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+     minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+     seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const newValue = [days, hours, minutes, seconds];
+    setValue(newValue);
+   }, 1000);
+  } else {
+   setValue([0, 0, 0, 0]);
+  }
+  return () => interval && clearInterval(interval);
+ }, []);
+ return (
+  <div className="flex w-full justify-around items-center">
+   <ClockItem value={value[0]} title="Days" />
+   <div>:</div>
+   <ClockItem value={value[1]} title="Hours" />
+   <div>:</div>
+   <ClockItem value={value[2]} title="Minutes" />
+   <div>:</div>
+   <ClockItem value={value[3]} title="Seconds" />
+  </div>
+ );
 };
 
-export default Clock;
+function ClockItem(props: { value: number | null; title: string }) {
+ const value = useMemo(() => {
+  if (props.value === null) {
+   return "-";
+  }
+  if (props.value < 10) {
+   return "0" + props.value;
+  }
+  return props.value + "";
+ }, [props.value]);
+ return (
+  <div>
+   <div className="font-bold text-3xl">{value}</div>
+   <p>{props.title}</p>
+  </div>
+ );
+}

@@ -1,5 +1,12 @@
 import { AbiItem } from "web3-utils";
 export interface Env {
+ beginTime: {
+  year: number;
+  month: number;
+  day: number;
+  hour: number;
+  minute: number;
+ };
  countdown: {
   year: number;
   month: number;
@@ -29,10 +36,17 @@ export interface Env {
 }
 
 export const ENV: Env = {
+ beginTime: {
+  year: 0,
+  month: 0,
+  day: 0,
+  hour: 0,
+  minute: 0,
+ },
  countdown: {
-  year: 2023,
-  month: 12,
-  day: 1,
+  year: 0,
+  month: 0,
+  day: 0,
   hour: 0,
   minute: 0,
  },
