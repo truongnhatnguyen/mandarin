@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { ENV } from "../../../../environment";
+import { Link } from "../../../../shared/components/Link";
 
 export function Card(
  props: React.PropsWithChildren & {
@@ -32,12 +33,12 @@ export function Card(
     <div className="cs-catd_footer grid sm:grid-cols-2 grid-cols-1  items-center">
      <div className="cs-left">
       <div className="cs-social_widget-home  justify-content-center">
-       <NavLink to={ENV.twitter}>
+       <Link to={ENV.twitter}>
         <i className="fab fa-twitter cursor-pointer" />
-       </NavLink>
-       <NavLink to={ENV.telegram}>
+       </Link>
+       <Link to={ENV.telegram}>
         <i className="fab fa-telegram cursor-pointer" />
-       </NavLink>
+       </Link>
       </div>
      </div>
      <div className="cs-right">

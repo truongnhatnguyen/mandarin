@@ -40,7 +40,11 @@ export function Menu() {
       <div className="cs-nav_out">
         <div className="cs-nav_in">
           <div className="cs-nav">
-            <ul className={`cs-nav_list ${openMenu ? "!block" : "hidden"}`}>
+            <ul
+              className={`cs-nav_list ${
+                openMenu ? "!block duration-500 " : "hidden"
+              }`}
+            >
               {lstMenus.map((item, idx) => (
                 <li
                   key={idx}

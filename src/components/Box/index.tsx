@@ -11,7 +11,7 @@ export function Box(
     <div className="">
       <div className="cs-iconbox cs-style1 cs-white_bg  h-full">
         <div className="cs-iconbox_icon">
-          <img src={props.img} className="inline" alt="" />
+          <img src={props.img} className="inline object-cover" alt="" />
         </div>
         <h2 className="cs-iconbox_title">{props.title}</h2>
         <div className="cs-iconbox_subtitle">{props.subTitle}</div>
