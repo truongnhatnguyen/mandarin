@@ -30,7 +30,7 @@ const dataBox = [
 export function IconBoxes() {
   return (
     <section>
-      <div className="container-auto sm:mx-auto mx-5">
+      <div className="sm:container sm:mx-auto md:container-auto mx-10">
         <h2 className="cs-section_heading cs-style1 text-center">
           Competitive Advantages
         </h2>

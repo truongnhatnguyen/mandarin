@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 
 export function Card(
   props: React.PropsWithChildren & {
-    LuotLike: string;
     info: string;
     avatarInfo: string;
     price: string;
@@ -14,10 +13,6 @@ export function Card(
 ) {
   return (
     <div className="cs-card cs-style4 cs-box_shadow cs-white_bg">
-      <span className="cs-card_like cs-primary_color">
-        <i className="fas fa-heart fa-fw" />
-        {props.LuotLike}
-      </span>
       <NavLink
         to={`/explore-details/${props.id}`}
         className="cs-card_thumb cs-zoom_effect"

@@ -11,7 +11,7 @@ export function MenuFilter(props: MenuFilterProps) {
   const { lstLabels, activeFilter, onFilterClick } = props;
 
   return (
-    <div className="cs-isotop_filter cs-style1 cs-type1 cs-center">
+    <div className="cs-isotop_filter cs-style1 cs-type1 cs-center ">
       <ul className="cs-mp0 cs-center">
         {lstLabels.map((label, idx) => (
           <li key={idx} className={activeFilter === label ? "active" : ""}>
