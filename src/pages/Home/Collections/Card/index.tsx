@@ -12,10 +12,7 @@ export function Card(
 ) {
   return (
     <div className="cs-card cs-style3 cs-box_shadow cs-white_bg">
-      <NavLink
-        to="collection-details.html"
-        className="cs-card_thumb cs-zoom_effect"
-      >
+      <NavLink to="#" className="cs-card_thumb cs-zoom_effect">
         <img src={props.img} alt="" className="cs-zoom_item" />
       </NavLink>
       <NavLink to="#" className="cs-avatar">
@@ -24,7 +21,7 @@ export function Card(
       </NavLink>
       <div className="cs-card_info">
         <h3 className="cs-card_title">
-          <NavLink to="collection-details">{props.title}</NavLink>
+          <NavLink to="#">{props.title}</NavLink>
         </h3>
         <div className="cs-card_subtitle">
           <i className="far fa-check-circle fa-fw" />

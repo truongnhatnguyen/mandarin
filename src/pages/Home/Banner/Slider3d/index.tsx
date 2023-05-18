@@ -33,8 +33,8 @@ export function Slider3d(
       loop={true}
       slidesPerView={2}
       breakpoints={{
-        350: { slidesPerView: 3 },
-        640: { slidesPerView: 3 },
+        350: { slidesPerView: 1 },
+        640: { slidesPerView: 1 },
         768: { slidesPerView: 2 },
         1024: {
           slidesPerView: 2,
@@ -56,7 +56,6 @@ export function Slider3d(
             <Card
               id={data.id}
               key={idx}
-              LuotLike={data.LuotLike}
               img={data.img}
               avatarInfo={data.avatarInfo}
               info={data.info}

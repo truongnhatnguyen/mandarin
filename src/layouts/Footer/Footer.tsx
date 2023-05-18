@@ -6,7 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ENV } from "src/environment";
 import { ButtonColorEnum } from "src/shared/components/Button";
-import { Link } from "src/shared/components/Link";
+
 import "./Footer.css";
 
 export const Footer = () => {
@@ -65,7 +65,7 @@ export const Footer = () => {
           <div className="basis-8/12">
             <div className="flex flex-row flex-wrap">
               <div className="sm:basis-3/12 basis-full">
-                <NavLink to="">
+                <NavLink to="/">
                   <img src="assets/home/logo.png" alt="" />
                 </NavLink>
               </div>
@@ -74,24 +74,28 @@ export const Footer = () => {
                   <h2 className="cs-widget_title">Category</h2>
                   <ul className="cs-widget_nav">
                     <li>
-                      <Link to="/explore?category=Sport">Sport</Link>
+                      <NavLink to="explore?category=Sport">Sport</NavLink>
                     </li>
                     <li>
-                      <Link to="/explore?category=Simulation">Simulation</Link>
+                      <NavLink to="explore?category=Simulation">
+                        Simulation
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/explore?category=Adventures">Adventures</Link>
+                      <NavLink to="explore?category=Adventures">
+                        Adventures
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/explore?category=Role-playing">
+                      <NavLink to="explore?category=Role-playing">
                         Role-playing
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="/explore?category=Strategy">Strategy</Link>
+                      <NavLink to="explore?category=Strategy">Strategy</NavLink>
                     </li>
                     <li>
-                      <Link to="/explore?category=Action">Action</Link>
+                      <NavLink to="explore?category=Action">Action</NavLink>
                     </li>
                   </ul>
                 </div>
@@ -102,16 +106,16 @@ export const Footer = () => {
                   <h2 className="cs-widget_title">Account</h2>
                   <ul className="cs-widget_nav">
                     <li>
-                      <Link to="user-items.html">Buy Presale</Link>
+                      <NavLink to="/presale">Buy Presale</NavLink>
                     </li>
                     <li>
-                      <Link to="create-items.html">Contact</Link>
+                      <NavLink to="/contact">Contact</NavLink>
                     </li>
                     <li>
-                      <Link to="user-account-settings.html">Documents</Link>
+                      <NavLink to="#">Documents</NavLink>
                     </li>
                     <li>
-                      <Link to="/connect-wallet">Connect wallet</Link>
+                      <NavLink to="/connect-wallet">Connect wallet</NavLink>
                     </li>
                   </ul>
                 </div>
@@ -122,19 +126,19 @@ export const Footer = () => {
                   <h2 className="cs-widget_title">Company</h2>
                   <ul className="cs-widget_nav">
                     <li>
-                      <Link to="blog.html">Blogs</Link>
+                      <NavLink to="#">Blogs</NavLink>
                     </li>
                     <li>
-                      <Link to="how-it-works.html">How it Works</Link>
+                      <NavLink to="/how-it-works">How it Works</NavLink>
                     </li>
                     <li>
-                      <Link to="about.html">About Us</Link>
+                      <NavLink to="/about">About Us</NavLink>
                     </li>
                     <li>
-                      <Link to="contact.html">Contact</Link>
+                      <NavLink to="/contact">Contact</NavLink>
                     </li>
                     <li>
-                      <Link to="faq.html">Community</Link>
+                      <NavLink to="#">Community</NavLink>
                     </li>
                   </ul>
                 </div>
