@@ -79,7 +79,7 @@ export function Collections() {
        <div className="cs-slider_wrapper">
         <SlidesPerview slidesPerView={5} spaceBetween={20}>
          {datas.map((data, idx) => (
-          <SwiperSlide>
+          <SwiperSlide key={data.title}>
            <Card
             img={data.img}
             subTitle={data.subTitle}

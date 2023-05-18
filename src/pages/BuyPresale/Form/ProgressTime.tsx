@@ -23,14 +23,8 @@ export function ProgressTime() {
  useEffect(() => {
   const now = Date.now();
   const diffNow = now - startDate.getTime();
-  let interval: any;
-  if (diffNow > 0) {
-   interval = setInterval(() => {
-    const value = (diffNow * 100) / diffTime;
-    setProgress(value);
-   }, 1000 * 60 * 60);
-  }
-  return () => interval && clearInterval(interval);
+  const value = (diffNow * 100) / diffTime;
+  setProgress(value);
  }, []);
 
  return (
