@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { faEnvelope, faWarning } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMemo, useState } from "react";
@@ -7,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ENV } from "src/environment";
 import { ButtonColorEnum } from "src/shared/components/Button";
 
+import { Link } from "../../shared/components/Link";
 import "./Footer.css";
 
 export const Footer = () => {
@@ -48,13 +50,13 @@ export const Footer = () => {
   <footer className="cs-footer cs-style1">
    <div className="cs-footer_bg" />
    <div className="cs-height_100 cs-height_lg_60" />
-   <div className="container-auto sm:mx-auto mx-5">
+   <div className="sm:container-auto sm:mx-auto mx-10">
     <div className="flex flex-row flex-wrap">
      <div className="basis-8/12">
       <div className="flex flex-row flex-wrap">
-       <div className="sm:basis-3/12 basis-full">
+       <div className="sm:basis-3/12 basis-full sm:mb-0 mb-10">
         <NavLink to="/">
-         <img src="assets/home/logo.png" alt="" />
+         <img src="assets/home/logo.png" alt="" className="object-cover" />
         </NavLink>
        </div>
        <div className="sm:basis-3/12 basis-full">
@@ -68,7 +70,7 @@ export const Footer = () => {
            <NavLink to="explore?category=Simulation">Simulation</NavLink>
           </li>
           <li>
-           <NavLink to="explore?category=Adventures">Adventures</NavLink>
+           <NavLink to="explore?category=Survival">Survival</NavLink>
           </li>
           <li>
            <NavLink to="explore?category=Role-playing">Role-playing</NavLink>
@@ -168,34 +170,34 @@ export const Footer = () => {
    </div>
    <div className="cs-height_60 cs-height_lg_20" />
    <div className="cs-footer_bottom">
-    <div className="container mx-auto">
+    <div className="sm:container sm:mx-auto mx-10">
      <div className="cs-footer_separetor" />
      <div className="cs-footer_bottom_in">
       <div className="cs-copyright">Copyright 2022. Created by Mandarin.</div>
       <ul className="cs-footer_menu items-center">
        <div className="flex">
-        <NavLink
+        <Link
          to={ENV.twitter}
          className={
           "h-[30px] w-[30px] flex items-center justify-center rounded-full bg-white text-black relative m-2"
          }
         >
          <i className="fab fa-twitter fa-fw" />
-        </NavLink>
-        <NavLink
+        </Link>
+        <Link
          to={ENV.telegram}
          className={
           "h-[30px] w-[30px] flex items-center justify-center rounded-full bg-white text-black relative m-2"
          }
         >
          <i className="fab fa-telegram fa-fw" />
-        </NavLink>
+        </Link>
        </div>
        <li>
-        <NavLink to="/privacy">Privacy Policy</NavLink>
+        <NavLink to="privacy">Privacy Policy</NavLink>
        </li>
        <li>
-        <NavLink to="/term">Term &amp; Condition</NavLink>
+        <NavLink to="term">Term &amp; Condition</NavLink>
        </li>
       </ul>
      </div>

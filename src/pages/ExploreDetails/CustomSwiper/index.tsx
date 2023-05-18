@@ -15,6 +15,7 @@ export function CustomSwiper(
   }
 ) {
   const [thumbsSwiper, setThumbsSwiper] = useState<any | null>(null);
+
   return (
     <>
       <Swiper
@@ -37,7 +38,7 @@ export function CustomSwiper(
                 />
               </video>
             ) : (
-              <img src={item} alt="" className="w-full h-full" />
+              <img src={item} alt="" className="w-full h-full object-cover" />
             )}
           </SwiperSlide>
         ))}
@@ -45,8 +46,15 @@ export function CustomSwiper(
       <Swiper
         onSwiper={setThumbsSwiper}
         loop={true}
-        spaceBetween={10}
-        slidesPerView={3}
+        breakpoints={{
+          350: { slidesPerView: 2, spaceBetween: 10 },
+          640: { slidesPerView: 2, spaceBetween: 10 },
+          768: { slidesPerView: 2, spaceBetween: 30 },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        }}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
@@ -63,7 +71,7 @@ export function CustomSwiper(
                 />
               </video>
             ) : (
-              <img src={item} alt="" className="w-full h-full" />
+              <img src={item} alt="" className="w-full h-full object-cover" />
             )}
           </SwiperSlide>
         ))}

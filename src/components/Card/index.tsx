@@ -24,11 +24,11 @@ export function Card(
         to={`/explore-details/${props.id}`}
         className="cs-card_thumb cs-zoom_effect"
       >
-        <img src={props.img} alt="" className="cs-zoom_item" />
+        <img src={props.img} alt="" className="cs-zoom_item object-cover" />
       </NavLink>
       <div className="cs-card_info">
         <NavLink to="#" className="cs-avatar cs-white_bg">
-          <img src={props.avatarInfo} alt="Avatar" />
+          <img src={props.avatarInfo} alt="Avatar" className="object-cover" />
           <span>{props.info}</span>
         </NavLink>
         <h3 className="cs-card_title">
