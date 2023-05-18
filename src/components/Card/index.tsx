@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export function Card(
   props: React.PropsWithChildren & {
@@ -11,6 +12,12 @@ export function Card(
     id?: string;
   }
 ) {
+  function handleBuyNow() {
+    toast.success("Comming soon!");
+  }
+  function handlePlaceBid() {
+    toast.success("Comming soon!");
+  }
   return (
     <div className="cs-card cs-style4 cs-box_shadow cs-white_bg">
       <NavLink
@@ -32,10 +39,18 @@ export function Card(
         </div>
         <hr />
         <div className="cs-card_footer">
-          <span className="cs-card_btn_2" data-modal="#bid_1">
+          <span
+            onClick={handleBuyNow}
+            className="cs-card_btn_2"
+            data-modal="#bid_1"
+          >
             <span>Buy Now</span>
           </span>
-          <span className="cs-card_btn_place" data-modal="#history_1">
+          <span
+            onClick={handlePlaceBid}
+            className="cs-card_btn_place"
+            data-modal="#history_1"
+          >
             <span>Place Bid</span>
           </span>
         </div>

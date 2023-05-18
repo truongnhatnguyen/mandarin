@@ -2,8 +2,8 @@ import { faEnvelope, faWarning } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMemo, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+
 import { ENV } from "src/environment";
 import { ButtonColorEnum } from "src/shared/components/Button";
 
@@ -46,18 +46,6 @@ export const Footer = () => {
   };
   return (
     <footer className="cs-footer cs-style1">
-      <ToastContainer
-        position="bottom-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="colored"
-      />
       <div className="cs-footer_bg" />
       <div className="cs-height_100 cs-height_lg_60" />
       <div className="container-auto sm:mx-auto mx-5">
