@@ -4,52 +4,52 @@ const datas = [
  {
   memberName: "Eric K. McGhee",
   memberDesignation: "CEO &amp; Co-founder",
-  img: "assets/about/member.png",
+  img: "/assets/about/member.png",
  },
  {
   memberName: "Eric K. McGhee",
   memberDesignation: "CEO &amp; Co-founder",
-  img: "assets/about/member.png",
+  img: "/assets/about/member.png",
  },
  {
   memberName: "Eric K. McGhee",
   memberDesignation: "CEO &amp; Co-founder",
-  img: "assets/about/member.png",
+  img: "/assets/about/member.png",
  },
  {
   memberName: "Eric K. McGhee",
   memberDesignation: "CEO &amp; Co-founder",
-  img: "assets/about/member.png",
+  img: "/assets/about/member.png",
  },
  {
   memberName: "Eric K. McGhee",
   memberDesignation: "CEO &amp; Co-founder",
-  img: "assets/about/member.png",
+  img: "/assets/about/member.png",
  },
  {
   memberName: "Eric K. McGhee",
   memberDesignation: "CEO &amp; Co-founder",
-  img: "assets/about/member.png",
+  img: "/assets/about/member.png",
  },
  {
   memberName: "Eric K. McGhee",
   memberDesignation: "CEO &amp; Co-founder",
-  img: "assets/about/member.png",
+  img: "/assets/about/member.png",
  },
  {
   memberName: "Eric K. McGhee",
   memberDesignation: "CEO &amp; Co-founder",
-  img: "assets/about/member.png",
+  img: "/assets/about/member.png",
  },
  {
   memberName: "Eric K. McGhee",
   memberDesignation: "CEO &amp; Co-founder",
-  img: "assets/about/member.png",
+  img: "/assets/about/member.png",
  },
  {
   memberName: "Eric K. McGhee",
   memberDesignation: "CEO &amp; Co-founder",
-  img: "assets/about/member.png",
+  img: "/assets/about/member.png",
  },
 ];
 

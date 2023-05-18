@@ -74,49 +74,49 @@ export function About() {
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/1.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/1.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/2.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/2.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/3.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/3.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/4.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/4.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/5.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/5.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/6.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/6.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/7.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/7.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
@@ -128,49 +128,49 @@ export function About() {
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/5.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/5.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/9.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/9.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/10.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/10.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/11.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/11.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/12.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/12.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/13.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/13.svg" alt="Partner logo" />
         </div>
        </div>
       </div>
       <div className="cs-single_moving_item">
        <div className="cs-partner">
         <div className="cs-partner_in cs-center cs-white_bg">
-         <img src="assets/img/partners/14.svg" alt="Partner logo" />
+         <img src="/assets/img/partners/14.svg" alt="Partner logo" />
         </div>
        </div>
       </div>

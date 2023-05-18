@@ -26,7 +26,7 @@ export function CTA(
        </NavLink>
       </div>
       <div className="cs-cta_img text-center">
-       <img src="assets/img/general/cta2.svg" alt="" />
+       <img src="/assets/img/general/cta2.svg" alt="" />
       </div>
      </div>
     </div>
@@ -34,7 +34,7 @@ export function CTA(
     <div className="container-auto sm:mx-auto mx-5">
      <div className="cs-cta cs-style1 cs-bg">
       <div className="cs-cta_img">
-       <img src="assets/img/general/cta.svg" alt="" />
+       <img src="/assets/img/general/cta.svg" alt="" />
       </div>
       <div className="cs-cta_right">
        <h2 className="cs-cta_title">{props.CtaTitle}</h2>

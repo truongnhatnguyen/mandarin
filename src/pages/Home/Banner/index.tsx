@@ -5,7 +5,7 @@ export function Banner() {
  return (
   <section
    className="cs-hero cs-style4 cs-bg cs-center"
-   data-src="assets/img/hero_bg4.jpeg"
+   data-src="/assets/img/hero_bg4.jpeg"
   >
    <div className="container-auto">
     <div className="cs-hero_in">

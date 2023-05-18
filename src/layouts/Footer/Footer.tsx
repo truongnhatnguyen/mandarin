@@ -56,7 +56,7 @@ export const Footer = () => {
       <div className="flex flex-row flex-wrap">
        <div className="sm:basis-3/12 basis-full sm:mb-0 mb-10">
         <NavLink to="/">
-         <img src="assets/home/logo.png" alt="" className="object-cover" />
+         <img src="/assets/home/logo.png" alt="" className="object-cover" />
         </NavLink>
        </div>
        <div className="sm:basis-3/12 basis-full">
