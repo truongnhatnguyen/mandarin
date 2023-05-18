@@ -5,6 +5,7 @@ import { Head } from "src/components/Head";
 import { CustomSwiper } from "./CustomSwiper";
 import { useData } from "src/hooks/useData";
 import { DataCards } from "../Home/NewItem";
+import { toast } from "react-toastify";
 
 const dataCards = [
   {
@@ -67,6 +68,12 @@ export function ExploreDetails() {
 
   if (!value) {
     return <h1>Not found</h1>;
+  }
+  function handleBuyNow() {
+    toast.success("Comming soon!");
+  }
+  function handlePlaceBid() {
+    toast.success("Comming soon!");
   }
 
   return (
@@ -191,6 +198,7 @@ export function ExploreDetails() {
                   <NavLink
                     to="#"
                     className="cs-btn cs-style1 cs-btn_lg w-full text-center"
+                    onClick={handleBuyNow}
                   >
                     <span>Buy Now</span>
                   </NavLink>
@@ -199,6 +207,7 @@ export function ExploreDetails() {
                   <NavLink
                     to="#"
                     className="cs-btn cs-style1 cs-btn_lg w-full text-center bg-white"
+                    onClick={handlePlaceBid}
                   >
                     <span>Place Bid</span>
                   </NavLink>
