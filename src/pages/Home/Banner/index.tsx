@@ -19,17 +19,16 @@ export function Banner() {
         <br />
         management time capsules.
        </div>
-       <div className="cs-hero_btns flex gap-4">
-        <div>
-         <NavLink to="/presale" className="cs-hero_btn cs-style1 cs-color3">
-          <span>Buy Presale</span>
-         </NavLink>
-        </div>
-        <div>
-         <NavLink to="#" className="cs-hero_btn cs-style1 cs-color1">
-          <span>White Paper</span>
-         </NavLink>
-        </div>
+       <div className="flex flex-col md:flex-row gap-4">
+        <NavLink
+         to="/presale"
+         className="cs-hero_btn cs-style1 cs-color3 w-full"
+        >
+         <span>Buy Presale</span>
+        </NavLink>
+        <NavLink to="#" className="cs-hero_btn cs-style1 cs-color1 w-full">
+         <span>White Paper</span>
+        </NavLink>
        </div>
       </div>
      </div>
