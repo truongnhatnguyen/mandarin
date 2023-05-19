@@ -73,7 +73,7 @@ export function ExploreDetails() {
        </div>
        <div className="cs-height_25 cs-height_lg_25" />
        <div className="grid gap-4">
-        <div className="rounded-md w-full h-80">
+        <div className="rounded-md w-full max-h-80">
          <img
           src={value.imageHeader}
           alt=""

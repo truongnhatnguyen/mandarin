@@ -43,9 +43,9 @@ export function CustomSwiper(
     onSwiper={setThumbsSwiper}
     loop={true}
     breakpoints={{
-     350: { slidesPerView: 2 },
-     640: { slidesPerView: 3 },
-
+     350: { slidesPerView: 1 },
+     640: { slidesPerView: 2 },
+     730: { slidesPerView: 3 },
      1024: {
       slidesPerView: 2,
      },
