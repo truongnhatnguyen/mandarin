@@ -37,9 +37,10 @@ export function Explore() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category]);
 
-  const [activeFilter, setActiveFilter] = useState(labelFilters[0]);
+  const [activeFilter, setActiveFilter] = useState(category || labelFilters[0]);
   const [tmpDatas, setTmpDatas] = useState<DataCards[]>(dataCards);
   const [page, setPage] = useState(1);
+  const [productsToShow, setProductsToShow] = useState<DataCards[]>([]);
 
   const handleFilterClick = (filter: string) => {
     setActiveFilter(filter);
@@ -49,13 +50,80 @@ export function Explore() {
       const newArr = dataCards.filter((item) => item.category === filter);
       setTmpDatas(newArr as any);
     }
+    setPage(1);
   };
 
   const handleLoadMore = () => {
     setPage((prevPage) => prevPage + 1);
   };
 
-  const productsToShow = tmpDatas.slice(0, page * 10);
+  useEffect(() => {
+    setProductsToShow(tmpDatas.slice(0, page * 10));
+  }, [tmpDatas]);
+
+  const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const sortValue = event.target.value;
+
+    let sortedData = [...tmpDatas];
+
+    if (sortValue === "7") {
+      sortedData = sortData(sortedData, 7);
+    } else if (sortValue === "30") {
+      sortedData = sortData(sortedData, 30);
+    }
+
+    setProductsToShow(sortedData);
+    // const sortValue = parseInt(event.target.value, 10);
+
+    // let sortedData = [...tmpDatas];
+
+    // if (sortValue === 7) {
+    //   sortedData = sortedData
+    //     .filter((obj) => {
+    //       const today = new Date();
+    //       const last7Days = new Date();
+    //       last7Days.setDate(today.getDate() - 7);
+    //       return new Date(obj.releaseDate) >= last7Days;
+    //     })
+    //     .sort(
+    //       (a, b) =>
+    //         new Date(b.releaseDate).getTime() -
+    //         new Date(a.releaseDate).getTime()
+    //     );
+    // } else if (sortValue === 30) {
+    //   sortedData = sortedData
+    //     .filter((obj) => {
+    //       const today = new Date();
+    //       const last30Days = new Date();
+    //       last30Days.setDate(today.getDate() - 30);
+    //       return new Date(obj.releaseDate) >= last30Days;
+    //     })
+    //     .sort(
+    //       (a, b) =>
+    //         new Date(b.releaseDate).getTime() -
+    //         new Date(a.releaseDate).getTime()
+    //     );
+    // }
+
+    // setProductsToShow(sortedData);
+  };
+
+  const sortData = (data: DataCards[], days: number = 0): DataCards[] => {
+    const today = new Date();
+    const startDate = new Date();
+    startDate.setDate(today.getDate() - days);
+
+    const filteredData = data.filter((item) => {
+      const releaseDate = new Date(item.releaseDate);
+      return releaseDate >= startDate && releaseDate <= today;
+    });
+    console.log("filteredDataf", filteredData);
+
+    return filteredData.sort(
+      (a, b) =>
+        new Date(b.releaseDate).getTime() - new Date(a.releaseDate).getTime()
+    );
+  };
 
   return (
     <>
@@ -75,11 +143,13 @@ export function Explore() {
           <div className="cs-filter_head">
             <div className="cs-filter_head_right ">
               <div className="cs-form_field_wrap cs-select_arrow">
-                <select className="cs-form_field cs-field_sm">
-                  <option value={11}>Sort By</option>
-                  <option value={22}>Last 7 days</option>
-                  <option value={33}>Last 30 days</option>
-                  <option value={44}>All time</option>
+                <select
+                  className="cs-form_field cs-field_sm"
+                  onChange={handleSortChange}
+                >
+                  <option value={"all"}>All time</option>
+                  <option value={7}>Last 7 days</option>
+                  <option value={10}>Last 30 days</option>
                 </select>
               </div>
             </div>
