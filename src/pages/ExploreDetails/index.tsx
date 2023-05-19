@@ -39,8 +39,8 @@ export function ExploreDetails() {
 
     <div className="cs-height_100 cs-height_lg_70" />
     <div className="container-auto">
-     <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-4">
-      <div className="col-lg-6">
+     <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-4">
+      <div>
        <CustomSwiper imgs={value.images}></CustomSwiper>
        {/* <div className="cs-height_10 cs-height_lg_25" /> */}
        <div className="cs-tabs cs-fade_tabs cs-style1">
@@ -66,7 +66,7 @@ export function ExploreDetails() {
         </div>
        </div>
       </div>
-      <div className="col-lg-6">
+      <div>
        <div className="cs-height_0 cs-height_lg_40" />
        <div className="cs-single_product_head">
         <h2>{value.title}</h2>
