@@ -42,7 +42,7 @@ export function Menu() {
           <div className="cs-nav">
             <ul
               className={`cs-nav_list ${
-                openMenu ? "!block duration-500 " : "hidden"
+                openMenu ? "!h-60 !duration-500 !transition-all !py-3" : "h-0"
               }`}
             >
               {lstMenus.map((item, idx) => (

@@ -73,7 +73,7 @@ export function Explore() {
           </div>
           <div className="cs-height_30 cs-height_lg_30" />
           <div className="cs-filter_head">
-            <div className="cs-filter_head_right">
+            <div className="cs-filter_head_right ">
               <div className="cs-form_field_wrap cs-select_arrow">
                 <select className="cs-form_field cs-field_sm">
                   <option value={11}>Sort By</option>
