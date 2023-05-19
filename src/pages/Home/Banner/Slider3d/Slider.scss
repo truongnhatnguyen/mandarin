@@ -1,0 +1,20 @@
+.swiper-pagination-bullet {
+  border-radius: 100% !important;
+  background-image: linear-gradient(to right, #a52c51, #242069) !important;
+  opacity: 0.6;
+}
+.swiper-pagination {
+  //   position: none !important;
+  position: relative !important;
+}
+.swiper-pagination-bullet-active {
+  border-radius: 100px !important;
+  width: 28px;
+  background-image: linear-gradient(to right, #a52c51, #130c86) !important;
+  opacity: 1;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -6px !important;
+}

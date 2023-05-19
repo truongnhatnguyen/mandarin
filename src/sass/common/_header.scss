@@ -571,15 +571,16 @@
       width: 100vw;
       left: -15px;
       background-color: $white;
-      padding: 10px 0;
-      display: none;
+      // padding: 10px 0;
+      // display: none;
       top: 100%;
       border-top: 1px solid $border;
       border-bottom: 1px solid $border;
       overflow: auto;
       max-height: calc(100vh - 80px);
       line-height: 1.6em;
-
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      transition: 0.3s ease-in;
       ul {
         padding-left: 15px;
         display: none;
