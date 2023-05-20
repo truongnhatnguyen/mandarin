@@ -1,0 +1,42 @@
+[
+  {
+    "memberName": "Hammond Syd Chadwick",
+    "memberDesignation": "CEO & Co-founder",
+    "img": "/assets/about/member.png"
+  },
+  {
+    "memberName": "Johann",
+    "memberDesignation": "Co-founder",
+    "img": "/assets/about/member-1.png"
+  },
+  {
+    "memberName": "Tim Crawford",
+    "memberDesignation": "Marketing Manager",
+    "img": "/assets/about/member-2.png"
+  },
+  {
+    "memberName": "Tevin Farley Conner",
+    "memberDesignation": "Community Manager",
+    "img": "/assets/about/member-3.png"
+  },
+  {
+    "memberName": "Abraham",
+    "memberDesignation": "Product Manager",
+    "img": "/assets/about/member-4.png"
+  },
+  {
+    "memberName": "Ollie Otis",
+    "memberDesignation": "Data Analyst",
+    "img": "/assets/about/member-5.png"
+  },
+  {
+    "memberName": "Mason Lewis",
+    "memberDesignation": "Blockchain Developer",
+    "img": "/assets/about/member-6.png"
+  },
+  {
+    "memberName": "Jacob Williams",
+    "memberDesignation": "Software Engineer",
+    "img": "/assets/about/member-7.png"
+  }
+]

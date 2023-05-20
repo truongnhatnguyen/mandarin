@@ -1,66 +1,24 @@
+import { useData } from "src/hooks/useData";
 import { Team } from "./Team";
 
-const datas = [
-  {
-    memberName: "Hammond Syd Chadwick",
-    memberDesignation: "CEO & Co-founder",
-    img: "/assets/about/member.png",
-  },
-  {
-    memberName: "Johann",
-    memberDesignation: "Co-founder",
-    img: "/assets/about/member-1.png",
-  },
-  {
-    memberName: "Tim Crawford",
-    memberDesignation: "Marketing Manager",
-    img: "/assets/about/member-2.png",
-  },
-  {
-    memberName: "Tevin Farley Conner",
-    memberDesignation: "Community Manager",
-    img: "/assets/about/member-3.png",
-  },
-  {
-    memberName: "Abraham",
-    memberDesignation: "Product Manager",
-    img: "/assets/about/member-4.png",
-  },
-  {
-    memberName: "Ollie Otis",
-    memberDesignation: "Data Analyst",
-    img: "/assets/about/member-5.png",
-  },
-  {
-    memberName: "Mason Lewis",
-    memberDesignation: "Blockchain Developer",
-    img: "/assets/about/member-6.png",
-  },
-  {
-    memberName: "Jacob Williams",
-    memberDesignation: "Software Engineer",
-    img: "/assets/about/member-7.png",
-  },
-  {
-    memberName: "Eric K. McGhee",
-    memberDesignation: "CEO Co-founder",
-    img: "/assets/about/member-8.png",
-  },
-  {
-    memberName: "Eric K. McGhee",
-    memberDesignation: "CEO Co-founder",
-    img: "/assets/about/member-9.png",
-  },
-];
+interface MemberEntity {
+  memberName: string;
+  memberDesignation: string;
+  img: string;
+}
 
 export function TeamMembers() {
+  const { data: datas } = useData<MemberEntity[]>({
+    path: "/assets/about/data.json",
+    defaultValue: [],
+  });
   return (
-    <div className="container-auto sm:mx-auto mx-5">
+    <div className="container-auto">
       <h2 className="cs-section_heading cs-style1 text-center">
         Meet Our Team
       </h2>
       <div className="cs-height_45 cs-height_lg_45" />
-      <div className="cs-grid_5 cs-gap_30">
+      <div className="cs-grid_4 cs-gap_30">
         {datas.map((data, idx) => (
           <Team
             key={idx}

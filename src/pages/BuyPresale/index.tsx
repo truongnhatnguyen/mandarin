@@ -47,7 +47,7 @@ export function BuyPresalePage() {
             </div>
           </div>
           <div>
-            <p className="text-center text-xl font-semibold">Buy Pre-sale </p>
+            <p className="text-center text-xl font-semibold">Buy</p>
             <div className="mt-4 cs-white_bg rounded-2xl  p-10 pt-6 pb-2 space-y-4">
               <Form />
             </div>

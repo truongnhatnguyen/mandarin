@@ -98,7 +98,7 @@
   color: rgba($white, 0.9);
 }
 .cs-btn.cs-style1 {
-  display: inline-block;
+  // display: inline-block;
   line-height: 1.5em;
   color: #fff;
   font-weight: 500;
@@ -433,6 +433,11 @@
   display: grid;
   grid-auto-rows: 1fr;
   grid-template-columns: repeat(5, 1fr);
+}
+.cs-grid_4 {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .cs-gap_30 {
@@ -2106,6 +2111,10 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .cs-moving_carousel_2 {
+    width: calc(100% + 200px);
+    margin-left: 35px;
+  }
   .cs-btn.cs-style1 {
     padding: 8px 20px;
   }

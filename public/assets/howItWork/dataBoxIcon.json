@@ -1,0 +1,22 @@
+[
+  {
+    "img": "/assets/howItWork/icon-box.png",
+    "title": "Token Payments",
+    "subTitle": "We allow users to pay with BNB. this will involve integrating a payment gateway that accepts cryptocurrency payments."
+  },
+  {
+    "img": "/assets/howItWork/icon-box.png",
+    "title": "Token Rewards",
+    "subTitle": "We incentivize customers to use DRI tokens by providing rewards for token payments. This could be in the form of a discount, cashback, or loyalty rewards."
+  },
+  {
+    "img": "/assets/howItWork/icon-box.png",
+    "title": "Token Staking",
+    "subTitle": "The project can incentivize customers to hold and stake DRI tokens by providing exclusive access to new games, in-game content, or other benefits."
+  },
+  {
+    "img": "/assets/howItWork/icon-box.png",
+    "title": "Token Burn",
+    "subTitle": "We will implement a token burning mechanism to reduce the supply of tokens in circulation, which can increase their value and incentivize customers to hold and use them."
+  }
+]
