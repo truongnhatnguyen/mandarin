@@ -2,67 +2,29 @@ import { NavLink } from "react-router-dom";
 import { Box } from "src/components/Box";
 import { Head } from "src/components/Head";
 import { Accordians } from "./Accordians";
-const datas = [
-  {
-    title: "How do I get started in NFT?",
-    content:
-      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
-  },
-  {
-    title: "How do I get started in NFT?",
-    content:
-      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
-  },
-  {
-    title: "How do I get started in NFT?",
-    content:
-      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
-  },
-  {
-    title: "How do I get started in NFT?",
-    content:
-      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
-  },
-  {
-    title: "How do I get started in NFT?",
-    content:
-      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
-  },
-  {
-    title: "How do I get started in NFT?",
-    content:
-      "Step 1: Decide on the concept.Step 2: Decide on the platform Step Connect and build community.Step 4: Create your art. Step 5: Mint and share.The final step: Selling your NFT.",
-  },
-];
+import { useData } from "src/hooks/useData";
 
-const dataBoxIcon = [
-  {
-    img: "/assets/howItWork/icon-box.png",
-    title: "Token Payments",
-    subTitle:
-      "We allow users to pay with BNB. this will involve integrating a payment gateway that accepts cryptocurrency payments.",
-  },
-  {
-    img: "/assets/howItWork/icon-box.png",
-    title: "Token Rewards",
-    subTitle:
-      "We incentivize customers to use DRI tokens by providing rewards for token payments. This could be in the form of a discount, cashback, or loyalty rewards.",
-  },
-  {
-    img: "/assets/howItWork/icon-box.png",
-    title: "Token Staking",
-    subTitle:
-      "The project can incentivize customers to hold and stake DRI tokens by providing exclusive access to new games, in-game content, or other benefits.",
-  },
-  {
-    img: "/assets/howItWork/icon-box.png",
-    title: "Token Burn",
-    subTitle:
-      "We will implement a token burning mechanism to reduce the supply of tokens in circulation, which can increase their value and incentivize customers to hold and use them.",
-  },
-];
+interface DataBoxIcon {
+  img: string;
+  title: string;
+  subTitle: string;
+}
 
 export function HowItWorks() {
+  const { data: datas } = useData({
+    path: "/assets/howItWork/data.json",
+    defaultValue: [],
+  });
+  const { data: gettingStarted } = useData({
+    path: "/assets/howItWork/gettingstarted.json",
+    defaultValue: [],
+  });
+
+  const { data: dataBoxIcon } = useData<DataBoxIcon[]>({
+    path: "/assets/howItWork/dataBoxIcon.json",
+    defaultValue: [],
+  });
+
   return (
     <>
       <div>
@@ -72,7 +34,7 @@ export function HowItWorks() {
         {/* End Page Head */}
 
         {/* Start Icon Boxes */}
-        <div className="container-auto sm:mx-auto mx-4">
+        <div className="container-auto">
           <div className="cs-height_95 cs-height_lg_70" />
           <h2 className="cs-section_heading cs-style1 text-center">
             More Access to Blockchain through Games
@@ -94,7 +56,7 @@ export function HowItWorks() {
         <div className="cs-height_60 cs-height_lg_40" />
 
         <div>
-          <div className="container-auto sm:mx-auto mx-4">
+          <div className="container-auto ">
             <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
               <div className="">
                 <div className="cs-faq">
@@ -104,7 +66,7 @@ export function HowItWorks() {
                   </div>
                   <div className="cs-height_30 cs-height_lg_30" />
                   <div className="cs-accordians">
-                    <Accordians datas={datas}></Accordians>
+                    <Accordians datas={gettingStarted}></Accordians>
                     {/* .cs-accordian */}
                   </div>
                   {/* .cs-accordians */}
@@ -130,7 +92,7 @@ export function HowItWorks() {
           </div>
           <div className="cs-height_90 cs-height_lg_70" />
           {/* Start CTA */}
-          <div className="container-auto sm:mx-auto mx-4">
+          <div className="container-auto ">
             <div className="cs-cta cs-style2 text-center cs-white_bg">
               <h2 className="cs-cta_title">Can't find your desire answer?</h2>
               <div className="cs-cta_subtitle">

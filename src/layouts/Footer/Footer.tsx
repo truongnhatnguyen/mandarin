@@ -9,7 +9,6 @@ import { ENV } from "src/environment";
 import { ButtonColorEnum } from "src/shared/components/Button";
 
 import { Link } from "../../shared/components/Link";
-import "./Footer.css";
 
 export const Footer = () => {
   const [email, setEmail] = useState("");
@@ -174,11 +173,11 @@ export const Footer = () => {
       <div className="cs-footer_bottom">
         <div className="sm:container sm:mx-auto mx-10">
           <div className="cs-footer_separetor" />
-          <div className="cs-footer_bottom_in">
+          <div className="cs-footer_bottom_in sm:justify-between justify-center">
             <div className="cs-copyright">
               Copyright 2022. Created by Mandarin.
             </div>
-            <ul className="cs-footer_menu items-center sm:flex !grid !grid-cols-3">
+            <ul className="cs-footer_menu items-center sm:!flex-row flex-col">
               <div className="flex">
                 <Link
                   to={ENV.twitter}
@@ -197,10 +196,10 @@ export const Footer = () => {
                   <i className="fab fa-telegram fa-fw" />
                 </Link>
               </div>
-              <li>
+              <li className="sm:ml-4 ml-0">
                 <NavLink to="privacy">Privacy Policy</NavLink>
               </li>
-              <li>
+              <li className="sm:ml-4 ml-0">
                 <NavLink to="term">Term &amp; Condition</NavLink>
               </li>
             </ul>
