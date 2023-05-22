@@ -88,5 +88,15 @@
   "twitter": "https://twitter.com/Xbox",
   "urlInfo": "https://www.xbox.com/en-US/xbox-game-studios",
   "textFooter": "xbox.com"
+ },
+ {
+  "img": "/assets/home/top-developer.png",
+  "title": "Valve",
+  "subTitle": "Guarranted Authentic",
+  "avatar": "/assets/home/avatar-top-developer.png",
+  "instagram": "https://www.instagram.com/valvesoftware/",
+  "twitter": "https://twitter.com/valvesoftware",
+  "urlInfo": "https://www.valvesoftware.com/en/about",
+  "textFooter": "valvesoftwware.com"
  }
 ]

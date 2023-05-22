@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Card } from "src/components/Card";
 import { Head } from "src/components/Head";
 import { MenuFilter } from "src/components/MenuFilter";
@@ -59,7 +59,7 @@ export function Explore() {
 
  useEffect(() => {
   setProductsToShow(tmpDatas.slice(0, page * 10));
- }, [tmpDatas]);
+ }, [tmpDatas, page]);
 
  const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
   const sortValue = event.target.value;
@@ -124,7 +124,7 @@ export function Explore() {
      <div className="cs-grid_5 cs-gap_30">
       {productsToShow.map((data, idx) => (
        <Card
-        key={idx}
+        key={data.id + "_" + idx}
         id={data.id}
         img={data.imageHeader}
         avatarInfo={data.avatarInfo}
@@ -141,13 +141,9 @@ export function Explore() {
      <div className="text-center">
       {productsToShow.length > 0 &&
        productsToShow.length <= tmpDatas.length && (
-        <NavLink
-         to="#"
-         className="cs-btn cs-style1 cs-btn_lg"
-         onClick={handleLoadMore}
-        >
-         <span>Load More</span>
-        </NavLink>
+        <button className="cs-btn cs-style1 cs-btn_lg" onClick={handleLoadMore}>
+         Load more
+        </button>
        )}
      </div>
     </div>

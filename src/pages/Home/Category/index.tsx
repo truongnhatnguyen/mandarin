@@ -52,9 +52,8 @@ export function Catagory() {
       <div className="cs-slider_wrapper">
        <SlidesPerview slidesPerView={5} spaceBetween={20}>
         {datas.map((data, idx) => (
-         <SwiperSlide>
+         <SwiperSlide key={idx}>
           <CardCategory
-           key={idx}
            img={data.img}
            title={data.title}
            subTitle={data.subTitle}

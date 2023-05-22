@@ -33,6 +33,9 @@ export function Form() {
      <SwapIcon />
      <ToToken />
      <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 py-5">
+      <button onClick={buy} className="px-5 py-3 bg-blue-500 rounded-md">
+       Buy presale
+      </button>
       <InviteButton />
      </div>
     </>
