@@ -27,7 +27,7 @@ export function SimilarItems(props: { categoryId: string }) {
       {/* <div className="cs-grid_5 cs-gap_30"> */}
       <SlidesPerview slidesPerView={5} spaceBetween={20}>
         {datas.map((data, idx) => (
-          <SwiperSlide key={data.id}>
+          <SwiperSlide key={data.id} className="!h-none">
             <Card
               id={data.id}
               img={data.imageHeader}

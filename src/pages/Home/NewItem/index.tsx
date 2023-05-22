@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Card } from "src/components/Card";
 import { MenuFilter } from "src/components/MenuFilter";
 import { useData } from "src/hooks/useData";
+
 const labelFilters = [
   "All Game",
   "Sport",
@@ -36,10 +37,6 @@ export function NewItem() {
     defaultValue: [] as DataCards[],
   });
 
-  useEffect(() => {
-    setTmpDatas(dataCards);
-  }, [dataCards]);
-
   const [activeFilter, setActiveFilter] = useState(labelFilters[0]);
   const [tmpDatas, setTmpDatas] = useState<DataCards[]>(dataCards);
   const [page, setPage] = useState(1);
@@ -64,6 +61,10 @@ export function NewItem() {
     return dataB - dataA;
   });
 
+  useEffect(() => {
+    setTmpDatas(dataCards);
+  }, [dataCards]);
+
   const productsToShow = sorted.slice(0, page * 10);
   return (
     <section>
@@ -79,18 +80,21 @@ export function NewItem() {
           onFilterClick={handleFilterClick}
         ></MenuFilter>
         <div className="cs-height_45 cs-height_lg_45" />
-        <div className="cs-grid_5 cs-gap_30">
-          {productsToShow.map((data, idx) => (
-            <Card
-              key={idx}
-              id={data.id}
-              img={data.imageHeader}
-              avatarInfo={data.avatarInfo}
-              info={data.info}
-              price={data.price}
-              title={data.title}
-            ></Card>
-          ))}
+        <div className="cs-isotop cs-style1 cs-isotop_col_5 cs-has_gutter_30">
+          <div className="cs-grid_sizer"></div>
+          <div className="cs-grid_5 cs-gap_30 transform transition duration-300 ease-in-out">
+            {productsToShow.map((data, idx) => (
+              <Card
+                key={idx}
+                id={data.id}
+                img={data.imageHeader}
+                avatarInfo={data.avatarInfo}
+                info={data.info}
+                price={data.price}
+                title={data.title}
+              ></Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>

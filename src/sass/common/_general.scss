@@ -1354,7 +1354,8 @@
   display: flex;
   flex-wrap: wrap;
   margin: -7px;
-  a {
+  a,
+  span {
     height: 24px;
     width: 24px;
     display: flex;
@@ -1385,6 +1386,7 @@
     &:hover {
       background-color: transparent;
       transition-delay: 0.2s;
+      text-decoration: none;
       &::after {
         opacity: 1;
       }
