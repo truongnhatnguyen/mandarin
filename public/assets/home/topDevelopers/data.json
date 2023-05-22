@@ -1,0 +1,102 @@
+[
+  {
+    "img": "/assets/home/topDevelopers/Bethesda-cover.png",
+    "title": "Red Barrels",
+    "subTitle": "Guarranted Authentic",
+    "avatar": "/assets/home/topDevelopers/Bethesda.png",
+    "instagram": "https://www.instagram.com/the.redbarrels/",
+    "twitter": "https://twitter.com/TheRedBarrels",
+    "urlInfo": "https://redbarrelsgames.com/",
+    "textFooter": "valvesoftwware.com"
+  },
+  {
+    "img": "/assets/home/topDevelopers/Respawn-EA-cover.png",
+    "title": "Respawn EA",
+    "subTitle": "Guarranted Authentic",
+    "avatar": "/assets/home/topDevelopers/Respawn-EA.png",
+    "instagram": "https://www.instagram.com/respawn/",
+    "twitter": "https://twitter.com/Respawn",
+    "urlInfo": "https://www.respawn.com/",
+    "textFooter": "valvesoftwware.com"
+  },
+  {
+    "img": "/assets/home/topDevelopers/Stunlock-Studios-cover.png",
+    "title": "Stunlock Studios",
+    "subTitle": "Guarranted Authentic",
+    "avatar": "/assets/home/topDevelopers/Stunlock-Studios.png",
+    "instagram": "https://www.instagram.com/StunlockStudios/",
+    "twitter": "https://twitter.com/StunlockStudios",
+    "urlInfo": "https://www.stunlock.com/",
+    "textFooter": "valvesoftwware.com"
+  },
+  {
+    "img": "/assets/home/topDevelopers/FacepunchStudioscover.png",
+    "title": "FacepunchStudios",
+    "subTitle": "Guarranted Authentic",
+    "avatar": "/assets/home/topDevelopers/FacepunchStudiosavt.png",
+    "instagram": "https://www.instagram.com/fcpnch/",
+    "twitter": "https://twitter.com/FcpnchStds",
+    "urlInfo": "https://facepunch.com/",
+    "textFooter": "valvesoftwware.com"
+  },
+  {
+    "img": "/assets/home/topDevelopers/WB-Games-cover.png",
+    "title": "WB Games",
+    "subTitle": "Guarranted Authentic",
+    "avatar": "/assets/home/topDevelopers/WB-Games.png",
+    "instagram": "https://www.instagram.com/wbgames/",
+    "twitter": "https://twitter.com/wbgames",
+    "urlInfo": "https://warnerbrosgames.com/",
+    "textFooter": "valvesoftwware.com"
+  },
+  {
+    "img": "/assets/home/topDevelopers/Bethesda-cover.png",
+    "title": "Bethesda",
+    "subTitle": "Guarranted Authentic",
+    "avatar": "/assets/home/topDevelopers/Bethesda.png",
+    "instagram": "https://www.instagram.com/bethesda/",
+    "twitter": "https://twitter.com/bethesda",
+    "urlInfo": "https://bethesda.net/",
+    "textFooter": "valvesoftwware.com"
+  },
+  {
+    "img": "/assets/home/topDevelopers/Ubisoft-cover.png",
+    "title": "Ubisoft",
+    "subTitle": "Guarranted Authentic",
+    "avatar": "/assets/home/topDevelopers/Ubisoft.png",
+    "instagram": "https://www.instagram.com/ubisoftuk/",
+    "twitter": "https://twitter.com/Ubisoft",
+    "urlInfo": "https://www.ubisoft.com/",
+    "textFooter": "valvesoftwware.com"
+  },
+  {
+    "img": "/assets/home/topDevelopers/Electronic-Arts-cover.png",
+    "title": "Electronic Arts",
+    "subTitle": "Guarranted Authentic",
+    "avatar": "/assets/home/topDevelopers/Electronic-Arts.png",
+    "instagram": "https://www.instagram.com/ea/",
+    "twitter": "https://twitter.com/EA",
+    "urlInfo": "https://www.ea.com/",
+    "textFooter": "valvesoftwware.com"
+  },
+  {
+    "img": "/assets/home/topDevelopers/xbox-cover.png",
+    "title": "Xbox Game Studios",
+    "subTitle": "Guarranted Authentic",
+    "avatar": "/assets/home/topDevelopers/xbox.png",
+    "instagram": "https://www.instagram.com/xbox/",
+    "twitter": "https://twitter.com/Xbox",
+    "urlInfo": "https://www.xbox.com/en-US/xbox-game-studios",
+    "textFooter": "valvesoftwware.com"
+  },
+  {
+    "img": "/assets/home/topDevelopers/xbox-cover.png",
+    "title": "Valve",
+    "subTitle": "Guarranted Authentic",
+    "avatar": "/assets/home/topDevelopers/xbox.png",
+    "instagram": "https://www.instagram.com/valvesoftware/",
+    "twitter": "https://twitter.com/valvesoftware",
+    "urlInfo": "https://www.valvesoftware.com/en/about",
+    "textFooter": "valvesoftwware.com"
+  }
+]

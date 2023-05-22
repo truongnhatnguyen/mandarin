@@ -38,7 +38,7 @@ export function Card(
           <img src={props.avatarInfo} alt="Avatar" className="object-cover" />
           <span>{props.info}</span>
         </NavLink>
-        <h3 className="cs-card_title whitespace-nowrap truncate">
+        <h3 className="cs-card_title ">
           <NavLink to="#">{props.title}</NavLink>
         </h3>
         <div className="cs-card_price">
