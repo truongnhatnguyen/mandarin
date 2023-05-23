@@ -105,8 +105,8 @@ export function ExploreDetails() {
          {/* .cs-tab */}
         </div>
        </div>
-       <div className="cs-tabs cs-fade_tabs cs-style1">
-        <div className="cs-medium">
+       <div className="cs-tabs cs-fade_tabs cs-style1 ">
+        <div className="cs-medium mt-4">
          <ul className="cs-tab_links cs-style1 cs-medium cs-primary_color cs-mp0 cs-primary_font">
           <li className="active">
            <NavLink to="#">Description</NavLink>
