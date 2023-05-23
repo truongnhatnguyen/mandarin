@@ -1,5 +1,4 @@
 import { useMemo, useState } from "react";
-import { NavLink } from "react-router-dom";
 import metamaskicon from "../../assets/metamaskicon.png";
 import trustwalleticon from "../../assets/trustwalleticon.png";
 import wallet from "../../assets/wallet.png";
@@ -7,6 +6,7 @@ import { useMetaMask } from "../../core/WalletProvider";
 import { WalletId } from "../../core/WalletProvider/wallet-interface";
 import { Button, ButtonColorEnum } from "./Button";
 import { Dialog } from "./Dialog";
+import { Link } from "./Link";
 import { YourWalletPopup } from "./Wallet/YourWalletPopup";
 export const BaseConnectWalletButton = (
  props: {
@@ -41,9 +41,9 @@ export const BaseConnectWalletButton = (
 };
 export const ConnectWalletButton = () => {
  return (
-  <NavLink to="/connect-wallet" className="cs-btn cs-style1">
+  <Link to="/connect-wallet" className="cs-btn cs-style1">
    <span>Connect Wallet</span>
-  </NavLink>
+  </Link>
  );
 };
 

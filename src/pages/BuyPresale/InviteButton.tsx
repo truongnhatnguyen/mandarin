@@ -49,7 +49,7 @@ function DialogInvite(props: { close: () => void }) {
        className="absolute top-1/2 -translate-y-1/2 right-4"
        onClick={handleCopy}
       >
-       <FontAwesomeIcon className="" icon={faCopy} />
+       <FontAwesomeIcon className="text-[#0e040e]" icon={faCopy} />
       </button>
      </div>
     )}

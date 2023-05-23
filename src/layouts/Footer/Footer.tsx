@@ -2,7 +2,6 @@
 import { faEnvelope, faWarning } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMemo, useState } from "react";
-import { NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ENV } from "src/environment";
@@ -54,31 +53,31 @@ export const Footer = () => {
      <div className="basis-8/12">
       <div className="flex flex-row flex-wrap">
        <div className="sm:basis-3/12 basis-full sm:mb-0 mb-10">
-        <NavLink to="/">
+        <Link to="/">
          <img src="/assets/home/logo.png" alt="" className="object-cover" />
-        </NavLink>
+        </Link>
        </div>
        <div className="sm:basis-3/12 basis-full">
         <div className="cs-footer_widget">
          <h2 className="cs-widget_title">Category</h2>
          <ul className="cs-widget_nav">
           <li>
-           <NavLink to="explore?category=Sport">Sport</NavLink>
+           <Link to="explore?category=Sport">Sport</Link>
           </li>
           <li>
-           <NavLink to="explore?category=Simulation">Simulation</NavLink>
+           <Link to="explore?category=Simulation">Simulation</Link>
           </li>
           <li>
-           <NavLink to="explore?category=Survival">Survival</NavLink>
+           <Link to="explore?category=Survival">Survival</Link>
           </li>
           <li>
-           <NavLink to="explore?category=Role-playing">Role-playing</NavLink>
+           <Link to="explore?category=Role-playing">Role-playing</Link>
           </li>
           <li>
-           <NavLink to="explore?category=Strategy">Strategy</NavLink>
+           <Link to="explore?category=Strategy">Strategy</Link>
           </li>
           <li>
-           <NavLink to="explore?category=Action">Action</NavLink>
+           <Link to="explore?category=Action">Action</Link>
           </li>
          </ul>
         </div>
@@ -89,16 +88,16 @@ export const Footer = () => {
          <h2 className="cs-widget_title">Account</h2>
          <ul className="cs-widget_nav">
           <li>
-           <NavLink to="/presale">Buy Presale</NavLink>
+           <Link to="/presale">Buy Presale</Link>
           </li>
           <li>
-           <NavLink to="/contact">Contact</NavLink>
+           <Link to="/contact">Contact</Link>
           </li>
           <li>
            <Link to={ENV.whitePaper}>Documents</Link>
           </li>
           <li>
-           <NavLink to="/connect-wallet">Connect wallet</NavLink>
+           <Link to="/connect-wallet">Connect wallet</Link>
           </li>
          </ul>
         </div>
@@ -109,13 +108,13 @@ export const Footer = () => {
          <h2 className="cs-widget_title">Company</h2>
          <ul className="cs-widget_nav">
           <li>
-           <NavLink to="/how-it-works">How it Works</NavLink>
+           <Link to="/how-it-works">How it Works</Link>
           </li>
           <li>
-           <NavLink to="/about">About Us</NavLink>
+           <Link to="/about">About Us</Link>
           </li>
           <li>
-           <NavLink to="/contact">Contact</NavLink>
+           <Link to="/contact">Contact</Link>
           </li>
          </ul>
         </div>
@@ -187,10 +186,10 @@ export const Footer = () => {
         </Link>
        </div>
        <li className="sm:ml-4 ml-0">
-        <NavLink to="privacy">Privacy Policy</NavLink>
+        <Link to="/privacy">Privacy Policy</Link>
        </li>
        <li className="sm:ml-4 ml-0">
-        <NavLink to="term">Term &amp; Condition</NavLink>
+        <Link to="/term">Term &amp; Condition</Link>
        </li>
       </ul>
      </div>

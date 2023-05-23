@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "../../shared/components/Link";
 
 export function Page404() {
  return (
@@ -13,9 +13,9 @@ export function Page404() {
         <img src="/assets/img/404.svg" alt={"404"} />
        </div>
        <div className="cs-height_70 cs-height_lg_40" />
-       <NavLink to="/" className="cs-btn cs-style1 cs-btn_lg">
+       <Link to="/" className="cs-btn cs-style1 cs-btn_lg">
         <span>Back To Home</span>
-       </NavLink>
+       </Link>
       </div>
      </div>
      <div className="cs-height_100 cs-height_lg_70" />

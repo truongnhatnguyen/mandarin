@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
 import { Head } from "src/components/Head";
 import { useData } from "src/hooks/useData";
 import { Box } from "../../components/Box";
+import { Link } from "../../shared/components/Link";
 import { Accordians } from "./Accordians";
 
 interface DataBoxIcon {
@@ -97,9 +97,9 @@ export function HowItWorks() {
         Exercitation veniam consequat sunt nostrud amet. It is a long <br />
         established fact that a reader
        </div>
-       <NavLink to={"/contact"} className="cs-btn cs-style1 cs-btn_lg">
+       <Link to={"/contact"} className="cs-btn cs-style1 cs-btn_lg">
         <span>Contact Us</span>
-       </NavLink>
+       </Link>
       </div>
      </div>
      {/* End CTA */}

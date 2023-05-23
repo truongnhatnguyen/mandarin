@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "../../shared/components/Link";
 
 export function Head(
  props: React.PropsWithChildren & {
@@ -16,7 +16,7 @@ export function Head(
      <h1 className="cs-page_title">{props.title}</h1>
      <ol className="breadcrumb flex">
       <li className="breadcrumb-item">
-       <NavLink to="/">Home</NavLink>
+       <Link to="/">Home</Link>
       </li>
       &nbsp; / &nbsp; <li className="breadcrumb-item active">{props.title}</li>
      </ol>

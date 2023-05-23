@@ -25,6 +25,7 @@ export function TopSeller() {
         {datas.map((data, idx) => (
          <SwiperSlide key={data.id}>
           <CardTopGame
+           id={data.id}
            img={data.imageHeader}
            title={data.title}
            avatarInfo={data.avatarInfo}
