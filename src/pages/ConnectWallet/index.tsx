@@ -1,15 +1,20 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useMetaMask } from "../../core/WalletProvider";
 import { WalletId } from "../../core/WalletProvider/wallet-interface";
 
 export function ConnectWallet() {
- const { connect: _connect } = useMetaMask();
+ const { connect: _connect, connected } = useMetaMask();
  const navigate = useNavigate();
- const handleConnect = (walletId: WalletId) => {
-  _connect(walletId).then(() => {
+ useEffect(() => {
+  if (connected) {
    navigate("/presale");
-  });
+  }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+ }, [connected]);
+ const handleConnect = (walletId: WalletId) => {
+  _connect(walletId);
  };
  return (
   <>

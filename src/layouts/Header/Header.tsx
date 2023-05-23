@@ -1,7 +1,9 @@
 // import { NavLink } from "../../shared/components/NavLink";
 import { NavLink } from "react-router-dom";
+import { useMetaMask } from "../../core/WalletProvider";
 import { Menu } from "../Menu";
 export const Header = () => {
+ const { connected } = useMetaMask();
  return (
   <header className="cs-site_header cs-style1 cs-sticky-header cs-white_bg">
    <div className="cs-main_header">
@@ -14,13 +16,15 @@ export const Header = () => {
       </div>
       <div className="cs-main_header_right">
        <Menu />
-       <div className="cs-header_btns_wrap">
-        <div className="cs-header_btns">
-         <NavLink to="connect-wallet" className="cs-btn cs-style1">
-          <span>Connect Wallet</span>
-         </NavLink>
+       {!connected && (
+        <div className="cs-header_btns_wrap">
+         <div className="cs-header_btns">
+          <NavLink to="connect-wallet" className="cs-btn cs-style1">
+           <span>Connect Wallet</span>
+          </NavLink>
+         </div>
         </div>
-       </div>
+       )}
       </div>
      </div>
     </div>
