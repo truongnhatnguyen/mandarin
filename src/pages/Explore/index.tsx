@@ -3,8 +3,8 @@ import { useLocation } from "react-router-dom";
 import { Card } from "src/components/Card";
 import { Head } from "src/components/Head";
 import { MenuFilter } from "src/components/MenuFilter";
-import { useData } from "src/hooks/useData";
-import { DataCards } from "../Home/NewItem";
+import { useGame } from "../../services/game.hook";
+import { IGame } from "../../services/game/game.interface";
 
 const labelFilters = [
  "All Game",
@@ -17,10 +17,7 @@ const labelFilters = [
 ];
 
 export function Explore() {
- const { data: dataCards } = useData<DataCards[]>({
-  path: "/assets/explore/datas.json",
-  defaultValue: [] as DataCards[],
- });
+ const { data: dataCards } = useGame();
 
  const { search } = useLocation();
  const category = new URLSearchParams(search).get("category");
@@ -38,9 +35,9 @@ export function Explore() {
  }, [category]);
 
  const [activeFilter, setActiveFilter] = useState(category || labelFilters[0]);
- const [tmpDatas, setTmpDatas] = useState<DataCards[]>(dataCards);
+ const [tmpDatas, setTmpDatas] = useState<IGame[]>(dataCards);
  const [page, setPage] = useState(1);
- const [productsToShow, setProductsToShow] = useState<DataCards[]>([]);
+ const [productsToShow, setProductsToShow] = useState<IGame[]>([]);
 
  const handleFilterClick = (filter: string) => {
   setActiveFilter(filter);
@@ -75,7 +72,7 @@ export function Explore() {
   setProductsToShow(sortedData);
  };
 
- const sortData = (data: DataCards[], days: number = 0): DataCards[] => {
+ const sortData = (data: IGame[], days: number = 0): IGame[] => {
   const today = new Date();
   const startDate = new Date();
   startDate.setDate(today.getDate() - days);

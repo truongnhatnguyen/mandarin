@@ -1,22 +1,19 @@
 import React from "react";
 
 export function Box(
-  props: React.PropsWithChildren & {
-    title: string;
-    subTitle: string;
-    img: string;
-  }
+ props: React.PropsWithChildren & {
+  title: string;
+  subTitle: string;
+  img: string;
+ }
 ) {
-  return (
-    <div className="">
-      <div className="cs-iconbox cs-style1 cs-white_bg  h-full">
-        <div className="cs-iconbox_icon">
-          <img src={props.img} className="inline object-cover" alt="" />
-        </div>
-        <h2 className="cs-iconbox_title">{props.title}</h2>
-        <div className="cs-iconbox_subtitle">{props.subTitle}</div>
-      </div>
-      <div className="cs-height_30 cs-height_lg_30" />
-    </div>
-  );
+ return (
+  <div className="cs-iconbox cs-style1 cs-white_bg  h-full flex flex-col space-y-4">
+   <div className="flex justify-center">
+    <img src={props.img} className="h-20" alt="" />
+   </div>
+   <h2 className="text-xl ">{props.title}</h2>
+   <div className="">{props.subTitle}</div>
+  </div>
+ );
 }

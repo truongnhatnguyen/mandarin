@@ -3,19 +3,15 @@ import React, { useMemo } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Head } from "src/components/Head";
-import { useData } from "src/hooks/useData";
 import { ENV } from "../../environment";
+import { useGame } from "../../services/game.hook";
 import { Link } from "../../shared/components/Link";
-import { DataCards } from "../Home/NewItem";
 import { CustomSwiper } from "./CustomSwiper";
 import { SimilarItems } from "./SimilarItem";
 
 export function ExploreDetails() {
  const { id } = useParams();
- const { data } = useData<DataCards[]>({
-  path: "/assets/explore/datas.json",
-  defaultValue: [] as DataCards[],
- });
+ const { data } = useGame();
 
  const value = useMemo(() => {
   return data.find((item) => item.id === id);

@@ -1,0 +1,27 @@
+[
+ {
+  "img": "/assets/about/icon-game.png",
+  "title": "99K+",
+  "subTitle": "Games"
+ },
+ {
+  "img": "/assets/about/icon-transactions.png",
+  "title": "5M+",
+  "subTitle": "Transactions"
+ },
+ {
+  "img": "/assets/about/icon-valuation.png",
+  "title": "85%",
+  "subTitle": "Valuation Accuracy "
+ },
+ {
+  "img": "/assets/about/icon-total.png",
+  "title": "500M+",
+  "subTitle": "Total Volume"
+ },
+ {
+  "img": "/assets/about/icon-daily.png",
+  "title": "70K+",
+  "subTitle": "Daily Transactions"
+ }
+]

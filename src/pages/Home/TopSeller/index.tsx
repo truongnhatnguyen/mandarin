@@ -1,90 +1,15 @@
+import { useEffect, useState } from "react";
 import { SlidesPerview } from "src/components/SlidesPerView";
 import { SwiperSlide } from "swiper/react";
+import { IGame } from "../../../services/game/game.interface";
+import { gameService } from "../../../services/game/game.service";
 import { CardTopGame } from "./CardTopGame";
-const dataCards = [
- {
-  LuotLike: "1.2K",
-  img: "/assets/exploredetails/similar4.png",
-  avatarInfo: "/assets/exploredetails/avatar-similar3.png",
-  info: "austin R.",
-  price: "0.29 --DR",
-  title: "Kawaii-bubble-tea",
- },
- {
-  LuotLike: "1.2K",
-  img: "/assets/exploredetails/similar3.png",
-  avatarInfo: "/assets/exploredetails/avatar-similar2.png",
-  info: "austin R.",
-  price: "0.29 --DR",
-  title: "Kawaii-bubble-tea",
- },
- {
-  LuotLike: "1.2K",
-  img: "/assets/exploredetails/similar2.png",
-  avatarInfo: "/assets/exploredetails/avatar-similar1.png",
-  info: "austin R.",
-  price: "0.29 --DR",
-  title: "Kawaii-bubble-tea",
- },
- {
-  LuotLike: "1.2K",
-  img: "/assets/exploredetails/similar1.png",
-  avatarInfo: "/assets/exploredetails/avatar-similar.png",
-  info: "austin R.",
-  price: "0.29 --DR",
-  title: "Kawaii-bubble-tea",
- },
- {
-  LuotLike: "1.2K",
-  img: "/assets/exploredetails/similar.png",
-  avatarInfo: "/assets/exploredetails/avatar-similar.png",
-  info: "austin R.",
-  price: "0.29 --DR",
-  title: "Kawaii-bubble-tea",
- },
- {
-  LuotLike: "1.2K",
-  img: "/assets/exploredetails/similar4.png",
-  avatarInfo: "/assets/exploredetails/avatar-similar3.png",
-  info: "austin R.",
-  price: "0.29 --DR",
-  title: "Kawaii-bubble-tea",
- },
- {
-  LuotLike: "1.2K",
-  img: "/assets/exploredetails/similar3.png",
-  avatarInfo: "/assets/exploredetails/avatar-similar2.png",
-  info: "austin R.",
-  price: "0.29 --DR",
-  title: "Kawaii-bubble-tea",
- },
- {
-  LuotLike: "1.2K",
-  img: "/assets/exploredetails/similar2.png",
-  avatarInfo: "/assets/exploredetails/avatar-similar1.png",
-  info: "austin R.",
-  price: "0.29 --DR",
-  title: "Kawaii-bubble-tea",
- },
- {
-  LuotLike: "1.2K",
-  img: "/assets/exploredetails/similar1.png",
-  avatarInfo: "/assets/exploredetails/avatar-similar.png",
-  info: "austin R.",
-  price: "0.29 --DR",
-  title: "Kawaii-bubble-tea",
- },
- {
-  LuotLike: "1.2K",
-  img: "/assets/exploredetails/similar.png",
-  avatarInfo: "/assets/exploredetails/avatar-similar.png",
-  info: "austin R.",
-  price: "0.29 --DR",
-  title: "Kawaii-bubble-tea",
- },
-];
 
 export function TopSeller() {
+ const [datas, setDatas] = useState<IGame[]>([]);
+ useEffect(() => {
+  gameService.getTopRelease().then(setDatas);
+ }, []);
  return (
   <section>
    <div className="sm:container sm:mx-auto md:container-auto mx-10">
@@ -97,10 +22,10 @@ export function TopSeller() {
      <div className="cs-slider_container">
       <div className="cs-slider_wrapper">
        <SlidesPerview slidesPerView={3} spaceBetween={40}>
-        {dataCards.map((data, idx) => (
-         <SwiperSlide>
+        {datas.map((data, idx) => (
+         <SwiperSlide key={data.id}>
           <CardTopGame
-           img={data.img}
+           img={data.imageHeader}
            title={data.title}
            avatarInfo={data.avatarInfo}
            info={data.info}
