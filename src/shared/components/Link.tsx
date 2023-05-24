@@ -25,11 +25,14 @@ export function Link(
     }
   };
   return (
-    <span
-      className={`cursor-pointer hover:underline ${props.className || ""}`}
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
+    <a
+      className={`cursor-pointer hover:underline-none ${props.className || ""}`}
       onClick={handleClick}
+      // eslint-disable-next-line no-script-url
+      href="javascript:void(0)"
     >
       {props.children}
-    </span>
+    </a>
   );
 }
