@@ -41,7 +41,7 @@ export function ProgressTime() {
      -translate-x-1/2 left-1/2
      text-sm font-extrabold text-transparent  bg-clip-text bg-gradient-to-r to-blue-600 from-pink-600"
     >
-     {ENV.tokenExchange} DRI = 1 BNB
+     1 BNB = 3,500 DRI / 40 BNB = 140,000 DRI
     </div>
    </div>
    <div>
