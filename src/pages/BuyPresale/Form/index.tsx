@@ -1,6 +1,7 @@
 import { useBuyPresale } from "../../../contexts/PresaleContext";
 import { useMetaMask } from "../../../core/WalletProvider";
 import { ConnectWalletButton } from "../../../shared/components/ConnectWalletButton";
+import { AddTokenButton } from "../AddTokenButton";
 import { Clock } from "../Clock";
 import { InviteButton } from "../InviteButton";
 import { FromToken } from "./FormItem/From";
@@ -32,6 +33,7 @@ export function Form() {
      <FromToken />
      <SwapIcon />
      <ToToken />
+     <AddTokenButton />
      <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 py-5">
       <button onClick={buy} className="px-5 py-3 bg-blue-500 rounded-md">
        Buy presale
