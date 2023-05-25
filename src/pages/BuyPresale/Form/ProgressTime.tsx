@@ -38,7 +38,7 @@ export function ProgressTime() {
     ></div>
     <div
      className="absolute top-0 
-     -translate-x-1/2 left-1/2
+     -translate-x-1/2 left-1/2 w-full
      text-sm font-extrabold text-transparent  bg-clip-text bg-gradient-to-r to-blue-600 from-pink-600"
     >
      1 BNB = 3,500 DRI / 40 BNB = 140,000 DRI
