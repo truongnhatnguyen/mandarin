@@ -22,22 +22,21 @@ export function Explore() {
   const { search } = useLocation();
   const category = new URLSearchParams(search).get("category");
 
-  useEffect(() => {
-    setTmpDatas(dataCards);
-  }, [dataCards]);
-  useEffect(() => {
-    if (category) {
-      handleFilterClick(category);
-    } else {
-      setActiveFilter(labelFilters[0]);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [category]);
-
   const [activeFilter, setActiveFilter] = useState(category || labelFilters[0]);
   const [tmpDatas, setTmpDatas] = useState<IGame[]>(dataCards);
   const [page, setPage] = useState(1);
   const [productsToShow, setProductsToShow] = useState<IGame[]>([]);
+
+  useEffect(() => {
+    setTmpDatas(dataCards);
+  }, [dataCards]);
+
+  useEffect(() => {
+    if (category) {
+      handleFilterClick(category);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [category]);
 
   const handleFilterClick = (filter: string) => {
     setActiveFilter(filter);
@@ -137,7 +136,7 @@ export function Explore() {
           <div className="cs-height_40 cs-height_lg_40" />
           <div className="text-center">
             {productsToShow.length > 0 &&
-              productsToShow.length <= tmpDatas.length && (
+              productsToShow.length < tmpDatas.length && (
                 <button className="cs-btn cs-style1" onClick={handleLoadMore}>
                   <span> Load more</span>
                 </button>
